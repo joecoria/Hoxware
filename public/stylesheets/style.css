@@ -28,9 +28,9 @@ nav img {width: 45px !important;}
 
 /* intro */
 #intro, #introinfo {height: 100vh;}
-h1 span.glitch {-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); color: transparent}
+h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: rgba(255, 255, 255, 0.72);}
 .glitch {position: relative; display: inline-block; text-transform: uppercase;}
-.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
+.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: -1px 0 #05d003; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
 .glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: 2px 0 #fff; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
 .heading:before {transform: translateX(-1px); text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
 .heading:after {transform: translateX(1px); text-shadow: -1px 0 #fff;}
