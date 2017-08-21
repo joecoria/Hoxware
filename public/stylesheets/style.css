@@ -4,8 +4,8 @@
 body {background: #030314; font-family: 'Bungee Hairline'; color: #fff}
 a {color: #D50D0E;}
 
-h1 {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-shadow: 0 0 100px; line-height: 50px;}
-h2 {font-size: 18px;}
+h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px;}
+h2 {font-size: 18px; text-transform: uppercase;}
 h3 {font-size: 16px;}
 h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700}
 p {font-size: 14px;}
@@ -17,8 +17,8 @@ span {color: #D50D0E;}
 .vertical-center {min-height: 100%; min-height: 100vh; display: flex; align-items: center;}
 
 /* general */
+h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 20px}
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
-
 .escondido {display: none;}
 
 /* nav */
@@ -28,12 +28,12 @@ nav img {width: 45px !important;}
 
 /* intro */
 #intro, #introinfo {height: 100vh;}
-h1 span.glitch {color: rgba(250, 250, 250, 0.9)}
+h1 span.glitch {-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); color: transparent}
 .glitch {position: relative; display: inline-block; text-transform: uppercase;}
-.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: -1px 0 #ab77a9; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
-.glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: 2px 0 #05d003; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
-.heading:before {transform: translateX(-1px); text-shadow: 1px 0 #a10897;}
-.heading:after {transform: translateX(1px); text-shadow: -1px 0 #05d003;}
+.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
+.glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: 2px 0 #fff; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
+.heading:before {transform: translateX(-1px); text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
+.heading:after {transform: translateX(1px); text-shadow: -1px 0 #fff;}
 @keyframes noise-anim {
 	0% {clip: rect(21px, 9999px, 57px, 0);}
 	5% {clip: rect(21px, 9999px, 80px, 0);}
