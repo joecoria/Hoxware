@@ -7,9 +7,21 @@ block content
         .col-md-5
           img(src='/images/logo.png', class='img-fluid')
     
-  .container-fluid.panel
-    .container#introinfo.vertical-center
-      .row.justify-content-md-center
-        .col-md-10.text-center
-          h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <span class="glitch heading" data-text="INFORMACIÓN">INFORMACIÓN</span> DE TU <br> ORGANIZACIÓN?
+  .container-fluid.panel#introinfo
+    .container-fluid.vertical-center
+      .col-md-12.text-center
+          h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <br> <span class="glitch heading" data-text="INFORMACIÓN">INFORMACIÓN</span> DE TU <br> ORGANIZACIÓN?
           h2 <span class="hilite">Afecta tu operatividad, imagen y economía,</span> Siendo una práctica habitual malintencionada
+          p <span class="learnmore" data-toggle="collapse" data-target="#masinfo"> SABER MÁS </span>
+          .collapse#masinfo.text-left
+            .row.justify-content-md-center
+              .col-md-10
+                p El robo y el secuestro de información es muy común y afecta hoy en día a muchas organizaciones.
+                p Explotando vulnerabilidades existentes:
+                .row
+                  .col.introline
+                    p.justify Obtienen información sensible que es utilizada para lucrar de manera ilícita.
+                  .col.introline
+                    p.justify Secuestran datos mediante encriptación obligando a pagar para poder recuperarlos.
+                  .col.introline
+                    p.justify Utilizan la información para realizar sabotaje industrial.
