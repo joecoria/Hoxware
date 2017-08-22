@@ -69,6 +69,7 @@ nav img {width: 45px !important;}
   clear: both;
 }
 #cd-vertical-nav a span {
+	color: #8E8E96;
   float: right;
   display: inline-block;
   -webkit-transform: scale(0.6);
@@ -84,7 +85,7 @@ nav img {width: 45px !important;}
   -o-transform: scale(1);
   transform: scale(1);
 }
-#cd-vertical-nav a:hover .cd-label, #cd-vertical-nav a.active .cd-label {
+#cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
 #cd-vertical-nav .cd-label {
