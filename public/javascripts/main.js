@@ -19,10 +19,10 @@ if ($(window).width() < 993) {
 $('.logo').hide();
 $(window).on("resize scroll", function (){
   if (Math.round($(window).scrollTop()) > 200) {
-    $('.logo').show("bounce", {direction: "down"}, 1000)
+    $('.logo').show("puff", 1000)
   }
 	if (Math.round($(window).scrollTop()) == 3) {
-    $('.logo').hide("blind", {direction: "up"}, 500)
+    $('.logo').hide("puff", 500)
   }
 });
 $( "#hoxware" ).hide();
