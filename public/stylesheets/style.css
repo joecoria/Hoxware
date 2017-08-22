@@ -5,7 +5,7 @@ body {background: #030314; font-family: 'Bungee Hairline'; color: #fff}
 a {color: #D50D0E;}
 a:hover {text-shadow: 0 0 5px; display: block; color: #fff;}
 
-h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px;}
+h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px; text-transform: uppercase;}
 h2 {font-size: 18px; text-transform: uppercase; color: #8E8E96}
 h3 {font-size: 16px; text-transform: uppercase;}
 h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700}
@@ -24,6 +24,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size:
 .justify {text-align: justify;}
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
+.boxline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #c7c7c7 0%, #030314 100%); border-image-slice: 1;}
+.headcontainer {margin: 9rem auto;}
 
 /* nav */
 .nav-wrapper {position: fixed; min-width: 100vw; z-index: 1; background: transparent;}
@@ -39,7 +41,6 @@ nav img {width: 45px !important;}
 
 /* intro */
 #intro, #introinfo {min-height: 100vh;}
-.introline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #c7c7c7 0%, #030314 100%); border-image-slice: 1;}
 h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: rgba(255, 255, 255, 0.36);}
 .glitch {position: relative; display: inline-block; text-transform: uppercase;}
 .glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: -1px 0 #05d003; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}

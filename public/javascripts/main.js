@@ -14,8 +14,8 @@ if ($(window).width() < 993) {
 //   e.preventDefault();
 //   $.scrollify.next();
 // });
-// navbar
 
+// navbar
 $('.logo').hide();
 $(window).on("resize scroll", function (){
   if (Math.round($(window).scrollTop()) > 200) {
@@ -25,6 +25,7 @@ $(window).on("resize scroll", function (){
     $('.logo').hide("blind", {direction: "up"}, 1000)
   }
 });
+
 
 // signature!
 console.log("%c  #  ·············With Tech & Love·················","color:cyan");
