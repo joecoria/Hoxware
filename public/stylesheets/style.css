@@ -3,6 +3,7 @@
 
 body {background: #030314; font-family: 'Bungee Hairline'; color: #fff}
 a {color: #D50D0E;}
+a:hover {text-shadow: 0 0 5px; display: block; color: #fff;}
 
 h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px;}
 h2 {font-size: 18px; text-transform: uppercase; color: #8E8E96}
@@ -21,11 +22,18 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size:
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
 .learnmore {cursor: pointer;}
 .justify {text-align: justify;}
-.justify:after {content: ""; display: inline-block; width: 100%; }
+.justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
 
 /* nav */
-.hoxnav {background: transparent; font-family:  'Bitter', serif; min-width: 100vw !important;}
+.nav-wrapper {position: fixed; min-width: 100vw; z-index: 1; background: transparent;}
+.nav-wrapper .logo {width: 50px; height: 50px; position: absolute; top: 1rem; left: 1rem;}
+.nav-wrapper .menu {position: fixed; top: 1rem; right: 1rem; max-width: 200px; z-index: 1;}
+.nav-wrapper .menu #accordion {position: fixed; top: 4rem; right: 1rem;}
+.navlinks ul {list-style: none; margin-bottom: 0; padding: 10px 0;}
+.navtoggle {position: fixed; top: 1rem; right: 1rem;}
+.navtoggle span {color: #EAE7E7; display: block;}
+span.icon-bar {width: 25px; height: 4px; border-radius: 1px; background: #EAE7E7; margin: 5px auto; padding: 0;}
 nav img {width: 45px !important;}
 .escondido.animated {display: block}
 

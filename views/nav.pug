@@ -1,17 +1,36 @@
-nav.navbar.navbar-inverse.fixed-top.hoxnav
-  button(type='button', data-toggle='collapse', data-target='#collapsingNavbar').navbar-toggler.navbar-toggler-right
-    span(class='navbar-toggler-icon')
-  a(href='').navbar-brand
+.nav-wrapper
+  .logo
     img(src='/images/icn_circle.svg', class="img-fluid")
-  .navbar-collapse.collapse#collapsingNavbar.float-right
-    ul.navbar-nav
-      li.nav-item
-        a(href='', class='nav-link') ¿Qué pasaría?
-      li.nav-item
-        a(href='', class='nav-link') Daños
-      li.nav-item
-        a(href='', class='nav-link') Protección
-      li.nav-item
-        a(href='', class='nav-link') Servicios
-      li.nav-item
-        a(href='', class='nav-link') Contacto
+  .menu
+    a(data-toggle='collapse', data-parent='#accordion', href='#nav')    
+      .navtoggle.text-center
+        span(class='icon-bar')
+        span(class='icon-bar')
+        span(class='icon-bar')
+    #accordion
+      .navlinks.collapse#nav
+        ul.text-right
+          li
+            a(href='') ¿Qué pasaría?
+          li
+            a(href='') Daños
+          li
+            a(href='') Protección
+          li
+            a(href='') Servicios
+          li
+            a(href='') Contacto
+  
+  //-   
+  //- .navbar-collapse.collapse#collapsingNavbar.float-right
+  //-   ul.navbar-nav
+  //-     li.nav-item
+  //-       a(href='', class='nav-link') ¿Qué pasaría?
+  //-     li.nav-item
+  //-       a(href='', class='nav-link') Daños
+  //-     li.nav-item
+  //-       a(href='', class='nav-link') Protección
+  //-     li.nav-item
+  //-       a(href='', class='nav-link') Servicios
+  //-     li.nav-item
+  //-       a(href='', class='nav-link') Contacto
