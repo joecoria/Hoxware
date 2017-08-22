@@ -1,14 +1,14 @@
 extends layout
 
 block content
-  .container-fluid.nosidepadding.dottedbg.panel#intro
+  .container-fluid.nosidepadding.dottedbg.panel#intro(data-section-name='inicio')
     .container-fluid.vertical-center
       .col-md-12.text-center
         .row.justify-content-md-center
           .col-sm-6#hoxware
             img(src='/images/logo.png', class='img-fluid')
   //- ¿Qué pasaría?
-  .container-fluid.panel#introinfo
+  .container-fluid.panel#introinfo(data-section-name='info')
     .container-fluid.vertical-center
       .col-md-12.text-center
           h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <br> <span class="glitch heading" data-text="INFORMACIÓN">INFORMACIÓN</span> DE TU <br> ORGANIZACIÓN?
@@ -27,7 +27,7 @@ block content
                   .col.boxline
                     p.justify Utilizan la información para realizar sabotaje industrial.
   //- Daños    
-  .container-fluid.panel#damage
+  .container-fluid.panel#damage(data-section-name='damages')
     .container-fluid.vertical-center
       .col-md-12.text-center
         .headcontainer
@@ -35,4 +35,5 @@ block content
         .row.justify-content-md-center
           .col-md-6.boxline
             h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
-          
+            
+      

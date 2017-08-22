@@ -7,13 +7,27 @@ if ($(window).width() < 993) {
 	$.scrollify({
 		section:".panel",
 		scrollSpeed:900,
-		after:function(i) {/* if(i===2) {$.scrollify.setOptions({easing:"easeOutExpo"});} */}
+		scrollbars:false,
+    before:function(i,panels) {
+      var ref = panels[i].attr("data-section-name");
+      $(".vnav .active").removeClass("active");
+      $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
+    },
+    afterRender:function() {
+      var vnav = "<ul class=\"vnav\">";
+      var activeClass = "";
+      $(".panel").each(function(i) {
+        activeClass = "";
+        if(i===0) {
+          activeClass = "active";
+        }
+        vnav += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+      });
+      vnav += "</ul>";
+      $("a.vlink").on("click",$.scrollify.move);
+    }
 	});
 };
-// $(".scroll,.scroll-btn").click(function(e) {
-//   e.preventDefault();
-//   $.scrollify.next();
-// });
 
 // navbar
 $('.logo').hide();
