@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  .container-fluid.nosidepadding.dottedbg.panel
-    .container#intro
-      .row.justify-content-md-center
-        .col-sm-5
-          img(src='/images/logo.png', class='img-fluid')
+  .container-fluid.nosidepadding.dottedbg.panel#intro
+    .container-fluid.vertical-center
+      .col-md-12.text-center
+        .row.justify-content-md-center
+          .col-sm-6
+            img(src='/images/logo.png', class='img-fluid')
   //- ¿Qué pasaría?
   .container-fluid.panel#introinfo
     .container-fluid.vertical-center
