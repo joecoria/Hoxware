@@ -22,8 +22,12 @@ $(window).on("resize scroll", function (){
     $('.logo').show("bounce", {direction: "down"}, 1000)
   }
 	if (Math.round($(window).scrollTop()) == 3) {
-    $('.logo').hide("blind", {direction: "up"}, 1000)
+    $('.logo').hide("blind", {direction: "up"}, 500)
   }
+});
+$( "#hoxware" ).hide();
+$(document).ready(function() {
+  $( "#hoxware" ).show("pulsate");
 });
 
 
