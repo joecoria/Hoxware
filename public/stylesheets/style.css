@@ -59,6 +59,7 @@ nav img {width: 45px !important;}
   text-align: right;
 }
 #cd-vertical-nav a {
+  font-size: 12px;
   display: inline-block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -70,6 +71,8 @@ nav img {width: 45px !important;}
 }
 #cd-vertical-nav a span {
 	color: #8E8E96;
+  font-family: 'Bitter', serif;
+  font-size: 8px;
   float: right;
   display: inline-block;
   -webkit-transform: scale(0.6);
@@ -85,13 +88,19 @@ nav img {width: 45px !important;}
   -o-transform: scale(1);
   transform: scale(1);
 }
-#cd-vertical-nav a:hover .cd-label {
+#cd-vertical-nav a span:first-child{
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+#cd-vertical-nav a:hover .cd-label, #cd-vertical-nav a.active .cd-label {
   opacity: 1;
+  color: #D50D0E;
+  font-family: 'Bitter', serif;
 }
 #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 5px;
-  padding: .1em .1em;
   color: white;
   font-size: 14px;
   font-size: 0.875rem;
