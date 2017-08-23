@@ -43,6 +43,10 @@ $( "#hoxware" ).hide();
 $(document).ready(function() {
   $( "#hoxware" ).show("pulsate");
 });
+function blink() {
+	$('#hoxware').addClass('animated flash');
+}
+setInterval("blink()", 3000);
 
 
 // signature!
