@@ -7,7 +7,7 @@ if ($(window).width() < 993) {
 	$.scrollify({
 		section:".panel",
 		scrollSpeed:900,
-		scrollbars:false,
+		overflowScroll: true,
     before:function(i,panels) {
       var ref = panels[i].attr("data-section-name");
       $(".vnav .active").removeClass("active");

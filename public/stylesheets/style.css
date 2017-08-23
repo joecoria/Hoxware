@@ -7,16 +7,20 @@ a:hover {text-shadow: 0 0 5px; display: block; color: #fff;}
 
 h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px; text-transform: uppercase;}
 h2 {font-size: 20px; text-transform: uppercase; color: #8E8E96}
-h3 {font-size: 16px; text-transform: uppercase;}
-h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700}
+h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 400; text-transform: none; color: #fff}
+h3 {font-size: 16px;}
+h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; line-height: 50px; text-transform: uppercase;}
 p {font-size: 14px; color: #c7c7c7}
 .bitter {font-family: 'Bitter', serif !important;}
+.bitter.thin {font-weight: 400;}
 span {color: #D50D0E;}
 /* 38px, 32px, 30px, 18px, 16px, 14px -- sacadas el PDF */
 
 /* custom */
 .nosidepadding {padding-left: 0; padding-right: 0;}
 .vertical-center {min-height: 100%; min-height: 100vh; display: flex; align-items: center;}
+.padding-vertical {padding-top: 2rem; padding-bottom: 2rem;}
+.padding-top {padding-top: 2rem;}
 
 /* general */
 h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size: 22px}
@@ -26,6 +30,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size:
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
 .boxline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #c7c7c7 0%, #030314 100%); border-image-slice: 1;}
+.box {border: 8px solid; padding: 20px; margin: 5px 5px; color: #fff; height: 360px; width: 110px}
 .headcontainer {margin: 9rem auto;}
 
 /* nav */
@@ -42,6 +47,7 @@ span.icon-bar {width: 25px; height: 4px; border-radius: 1px; background: #EAE7E7
 nav img {width: 45px !important;}
 .escondido.animated {display: block}
 
+
 /* vertical nav */
 #cd-vertical-nav {position: fixed; right: 20px; top: 90%; bottom: auto; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); z-index: 1;}
 #cd-vertical-nav ul {list-style-type: none !important;}
@@ -54,8 +60,7 @@ nav img {width: 45px !important;}
 #cd-vertical-nav a:hover .cd-label, #cd-vertical-nav a.active .cd-label {opacity: 1; color: #D50D0E; font-family: 'Bitter', serif;}
 #cd-vertical-nav .cd-label {position: relative; margin-right: -15px; color: white; font-size: 14px; font-size: 0.875rem; -webkit-transition: -webkit-transform 0.2s, opacity 0.2s; -moz-transition: -moz-transform 0.2s, opacity 0.2s; transition: transform 0.2s, opacity 0.2s; opacity: 0; -webkit-transform-origin: 100% 50%; -moz-transform-origin: 100% 50%; -ms-transform-origin: 100% 50%; -o-transform-origin: 100% 50%; transform-origin: 100% 50%;}
 
-/* content */
-#intro, #introinfo, #shield {min-height: 100vh;}
+/* intro */
 h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: rgba(255, 255, 255, 0.36);}
 .glitch {position: relative; display: inline-block; text-transform: uppercase;}
 .glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute; text-shadow: -1px 0 #05d003; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
@@ -200,3 +205,6 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 	95% {clip: rect(12px, 9999px, 60px, 0);}
 	100% {clip: rect(66px, 9999px, 69px, 0);}
 }
+
+/* protección */
+.tempicon {width: 165px; height: 165px; border-radius: 50%; background: #CC0506; display: block; margin: 2rem auto 1rem;}
