@@ -32,40 +32,44 @@ block content
       .col-md-12.text-center
         .headcontainer
           h1 El daño operativo puede <br>ocasionar incumplimiento<br> en compromisos<br> y servicios
-        .row.justify-content-md-center
-          .col-md-6.boxline
-            h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
+          p <span class="learnmore" data-toggle="collapse" data-target="#masdedamage"> SABER MÁS </span>
+          .collapse#masdedamage.text-left
+            .row.justify-content-md-center
+              .col-md-6.boxline
+                h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
   //- Protección
   .container-fluid.panel#shield(data-section-name='protección')
     .container-fluid.vertical-center
       .col-md-12.text-center
         .headcontainer
           h1 <span>Hoxware</span> brinda<br> protección a tus recursos,<br> identificando y eliminando<br>amenazas
-        .row.justify-content-md-center
-          .col-md-8
-            h2.text-left Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
-            .row
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin Ethical Hacking Certification | EC-Council
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin Computer Hacking Forensic Investigator Certification | EC-Council
-            .row
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin CCNP Routing & Switching
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin CCNA Routing & Switching
-            .row
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin CTFL | ISTQB
-              .col-md-6.text-center
-                .tempicon
-                h3.bitter.thin ITIL V3 Foundation
-  .clearfix
+          p <span class="learnmore" data-toggle="collapse" data-target="#masproteccion" id="shieldmore"> SABER MÁS </span>
+          .collapse#masproteccion
+            .container
+              .row.justify-content-md-center
+                .col-md-8
+                  h2 Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
+                  .row
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin Ethical Hacking Certification | EC-Council
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin Computer Hacking Forensic Investigator Certification | EC-Council
+                  .row
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin CCNP Routing & Switching
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin CCNA Routing & Switching
+                  .row
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin CTFL | ISTQB
+                    .col-md-6.text-center
+                      .tempicon
+                      h3.bitter.thin ITIL V3 Foundation
   //- Servicios
   .container-fluid.padding-vertical.panel#services(data-section-name='servicios')
     .container
@@ -81,7 +85,7 @@ block content
                 h3.serv WiFi Security Analysis
             .row
               .col.box
-                h3.serv Phising Prevention Campaing
+                h3.serv Phishing Prevention Campaing
               .col.box
                 h3.serv Hardening
               .col.box
@@ -89,7 +93,10 @@ block content
   
   //- Contacto
   .container-fluid.panel#contact(data-section-name='contacto')
-              
+    .container.vertical-center
+      .col-md-12.text-center
+        h2.contact ¿Vas a esperar hasta perder tu información?
+        h3.contact Escríbenos:
               
               
             

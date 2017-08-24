@@ -48,6 +48,11 @@ function blink() {
 }
 setInterval("blink()", 3000);
 
+// fixes
+$('#shieldmore').click(function() {
+	$('#shield').toggleClass('fix');
+});
+
 
 // signature!
 console.log("%c  #  ·············With Tech & Love·················","color:cyan");
