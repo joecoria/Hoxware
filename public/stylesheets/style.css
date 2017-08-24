@@ -27,7 +27,7 @@ span {color: #D50D0E;}
 /* general */
 h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size: 22px}
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
-.learnmore {cursor: pointer;}
+.learnmore {cursor: pointer; padding: 8px;}
 .justify {text-align: justify;}
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
