@@ -7,11 +7,9 @@ a:hover {text-shadow: 0 0 5px; display: block; color: #fff;}
 
 h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px; text-transform: uppercase;}
 h2 {font-size: 20px; text-transform: uppercase; color: #8E8E96}
-h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 400; text-transform: none; color: #fff}
 h2.contact {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700; text-transform: none; color: #fff}
 h3.contact {font-family: 'Bitter', serif; font-size: 28px; font-weight: 400; text-transform: none; color: #fff}
 h3 {font-size: 16px;}
-h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-transform: uppercase; text-overflow: clip;}
 p {font-size: 14px; color: #c7c7c7}
 .bitter {font-family: 'Bitter', serif !important;}
 .bitter.thin {font-weight: 400;}
@@ -212,7 +210,12 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 /* protección */
 #shield.fix {height: 100% !important}
 .tempicon {width: 165px; height: 165px; border-radius: 50%; background: #CC0506; display: block; margin: 2rem auto 1rem;}
-.box {border: 8px solid; padding: 20px; margin: 5px; color: #fff; height: 360px; min-width: 110px; cursor: pointer;}
 .show#masproteccion {display: inline-block !important; width: 100% !important;}
+
+/* servicios */
+h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 400; text-transform: none; color: #fff}
+h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-transform: uppercase; text-overflow: clip; position: absolute; bottom: 0; width: 86.5%;}
+.box {border: 8px solid; padding: 20px; margin: 5px; color: #fff; height: 360px; min-width: 110px; cursor: pointer; position: relative;}
 .hvr-sweep-to-top {display: block;}
-.hvr-sweep-to-top::before {background: #D50D0E;}
+.hvr-sweep-to-top::before {background: #D50D0E; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.box.hvr-sweep-to-top:hover h3.serv {bottom: auto;}
