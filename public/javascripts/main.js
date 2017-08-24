@@ -39,6 +39,10 @@ $(window).on("resize scroll", function (){
     $('.logo').hide("puff", 500)
   }
 });
+$('.btn-contact').click(function(){
+	$.scrollify.move("#contacto");
+});
+
 $( "#hoxware" ).hide();
 $(document).ready(function() {
   $( "#hoxware" ).show("pulsate");
@@ -48,7 +52,7 @@ function blink() {
 }
 setInterval("blink()", 3000);
 
-// fixes
+// overlap fix
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
