@@ -64,9 +64,9 @@ nav img {width: 45px !important;}
 /* intro */
 h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: #fff}
 .glitch {position: relative; display: inline-block; text-transform: uppercase;}
-.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute;  text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
-.glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: 2px 0 #fff; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
-.heading:before {transform: translateX(-1px); text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
+.glitch:after{clip: rect(0, 100%, 0, 0); content: attr(data-text); left: 0; overflow: hidden; position: absolute;  text-shadow: 2px 0 #fff; top: 0; webkit-animation: noise-anim 2s infinite linear alternate-reverse; moz-animation: noise-anim 2s infinite linear alternate-reverse; animation: noise-anim 2s infinite linear alternate-reverse;}
+.glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
+.heading:before {transform: translateX(-1px); text-shadow: 2px 0 #fff}
 .heading:after {transform: translateX(1px);  text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
 @keyframes noise-anim {
 	0% {clip: rect(21px, 9999px, 57px, 0);}
@@ -205,6 +205,155 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 	90% {clip: rect(52px, 9999px, 24px, 0);}
 	95% {clip: rect(12px, 9999px, 60px, 0);}
 	100% {clip: rect(66px, 9999px, 69px, 0);}
+}
+
+/* daños */
+.userwrap {position: relative;}
+#scene {position: absolute; height: 200px; width: 100vw;}
+.userinfo {
+	position: absolute !important;
+  background: rgba(3, 3, 20, .7);
+	width: 260px !important;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  padding: 10px 0 5px;
+}
+.userinfo:first-child {
+	filter: blur(1px);
+	top: 5rem !important;
+	left: 6rem !important;
+	opacity: 0.2;
+}
+.userinfo:nth-child(2) {
+  filter: blur(1px);
+  top: 1rem !important;
+  right: 16rem !important;
+	left: auto !important;
+  opacity: 0.4;
+}
+.userinfo:nth-child(3) {
+	filter: blur(1px);
+  top: 16rem !important;
+  left: 12rem !important;
+  opacity: 0.6;
+}
+.userinfo:nth-child(4) {
+  top: 13rem !important;
+  right: 13rem !important;
+	left: auto !important;
+	opacity: 1;
+}
+.userinfo p {
+	position: relative;
+	margin-bottom: 4px;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+	color: #fff;
+}
+.userinfo p span {
+	color: #fff;
+  font-weight: bold;
+}
+.userinfo p.line1 {
+  -webkit-animation: type .5s 1s steps(20, end) forwards;
+  -moz-animation: type .5s 1s steps(20, end) forwards;
+  -o-animation: type .5s 1s steps(20, end) forwards;
+  animation: type .5s 1s steps(20, end) forwards;
+}
+
+.userinfo p span.cursor1 {
+  -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards;
+}
+
+.userinfo p.line2 {
+  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  -moz-animation: type .5s 4.25s steps(20, end) forwards;
+  -o-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards;
+}
+
+.userinfo p span.cursor2 {
+  -webkit-animation: blink 1s 5.25s 2 forwards;
+  -moz-animation: blink 1s 5.25s 2 forwards;
+  -o-animation: blink 1s 5.25s 2 forwards;
+  animation: blink 1s 5.25s 2 forwards;
+}
+
+.userinfo p.line3 {
+  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+  -moz-animation: type .5s 7.5s steps(20, end) forwards;
+  -o-animation: type .5s 7.5s steps(20, end) forwards;
+  animation: type .5s 7.5s steps(20, end) forwards;
+}
+
+.userinfo p span.cursor3 {
+  -webkit-animation: blink 1s 8.5s 2 forwards;
+  -moz-animation: blink 1s 8.5s 2 forwards;
+  -o-animation: blink 1s 8.5s 2 forwards;
+  animation: blink 1s 8.5s 2 forwards;
+}
+
+.userinfo p.line4 {
+  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+  -moz-animation: type .5s 10.75s steps(20, end) forwards;
+  -o-animation: type .5s 10.75s steps(20, end) forwards;
+  animation: type .5s 10.75s steps(20, end) forwards;
+}
+
+.userinfo p span.cursor4 {
+  -webkit-animation: blink 1s 11.5s infinite;
+  -moz-animation: blink 1s 8.5s infinite;
+  -o-animation: blink 1s 8.5s infinite;
+  animation: blink 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes blink {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-o-keyframes blink {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  50% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-webkit-keyframes type {
+  to {width: 17em;}
+}
+@-moz-keyframes type {
+  to {width: 17em;}
+}
+@-o-keyframes type {
+  to {width: 17em;}
+}
+@keyframes type {
+  to {width: 17em;}
 }
 
 /* protección */

@@ -33,10 +33,12 @@ if ($(window).width() < 993) {
 $('.logo').hide();
 $(window).on("resize scroll", function (){
   if (Math.round($(window).scrollTop()) > 200) {
-    $('.logo').show("puff", 1000)
+		$( "#hoxware" ).hide("fade");
+    $('.logo').show("puff", 1000);
   }
 	if (Math.round($(window).scrollTop()) == 3) {
-    $('.logo').hide("puff", 500)
+		$( "#hoxware" ).show("pulsate");
+    $('.logo').hide("puff", 500);
   }
 });
 $('.btn-contact').click(function(){
@@ -47,15 +49,15 @@ $( "#hoxware" ).hide();
 $(document).ready(function() {
   $( "#hoxware" ).show("pulsate");
 });
-function blink() {
-	$('#hoxware').addClass('animated flash');
-}
-setInterval("blink()", 3000);
 
 // overlap fix
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
+
+// parallax?
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
 
 
 // signature!
