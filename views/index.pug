@@ -124,7 +124,10 @@ block content
       .col-md-12.text-center
         h2.contact ¿Vas a esperar hasta perder tu información?
         h3.contact Escríbenos:
-              
-              
-            
-      
+        form#contact.col-center
+          .form-group
+            input(type='text', class='form-control', id='name', name='name', placeholder='Nombre', autocomplete='false', required='required') 
+          .form-group
+            input(type='email', class='form-control', id='email', name='email', placeholder='Email', autocomplete='false', required='required') 
+          .form-group 
+            button(disabled="disabled", id='contactus') Quiero contactarlos
