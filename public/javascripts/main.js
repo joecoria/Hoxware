@@ -59,6 +59,57 @@ $('#shieldmore').click(function() {
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 
+// form
+var miid = '';
+$("input").on('focus', function(event) {
+  event.preventDefault();
+  $form=$(this).parents("form");
+  miid = $form.attr('id');
+  console.log(miid);
+  // valido miid form
+  var validEmail = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+  var thisEmail = '#' + miid + ' input[type="email"]';
+  var thisName = '#' + miid + '  input[type="text"]';
+	var thisSend = '#' + miid + ' button';
+	var bro = 'div.' + miid;
+  $(thisEmail).keyup(function (e) {
+    e.preventDefault();
+    var isValid = this.value.match(validEmail);
+    if(isValid) {
+      console.log('¡Está bien!');
+    } else {
+      console.log('¡Está mal!');
+    }
+  });
+	// validación de textarea
+	$(thisName).keyup(function () {
+		var filled = $(thisName).val();
+		if (filled == "") {
+			console.log('Falta texto');
+		} else {
+			$(thisSend).prop("disabled", false);
+		};
+	});
+	$(thisSend).click(function(e) {
+		e.preventDefault();
+		var email = $(thisEmail).val();
+		var name = $(thisName).val();
+		console.log(name);
+		console.log(email);
+		$(this).parents("form").addClass('escondido');
+	  $(this).parents("form").siblings(bro).addClass('animated bounce').removeClass('escondido');
+
+    $.get("/send",{name:name,email:email},function(data){
+      if(data=="sent"){
+        console.log("enviado");
+      }else{
+        console.log("no enviado");
+      }
+    });
+
+	})
+});
+
 
 // signature!
 console.log("%c  #  ·············With Tech & Love·················","color:cyan");
