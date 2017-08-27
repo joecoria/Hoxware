@@ -136,13 +136,17 @@ block content
             .col-sm-8.mensaje
               p ¡Ya se envió tu mensaje!
               p Muy pronto nos comunicaremos contigo.
-  .container-fluid.dottedbg.panel
-    .row.justify-content-md-center.text-center
-      .col-sm-10
-        .row
-          .col
-            a(class="twitter-timeline" data-width="300" data-height="650" data-theme="dark" data-link-color="#D50D0E" href="https://twitter.com/danna_kiedis") Tweets by danna_kiedis
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            //- script(async, src="//platform.twitter.com/widgets.js", charset="utf-8")
-          .col.contactinfo
-            p Datos de contacto lalalala
+    .container-fluid.dottedbg.panel(data-section-name='contacto2')
+      .container.padding-vertical
+        .row.justify-content-md-center
+          .col-sm-8
+            .row
+              .col
+                a(class="twitter-timeline" data-width="300" data-height="650" data-theme="dark" data-link-color="#D50D0E" href="https://twitter.com/danna_kiedis") Tweets by danna_kiedis
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                //- script(async, src="//platform.twitter.com/widgets.js", charset="utf-8")
+              .col.contactinfo.padding-vertical
+                h4.contact Teléfono:
+                p 55-23-24-12
+                h4.contact E-mail:
+                p contacto@hoxware.com

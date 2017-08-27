@@ -9,6 +9,7 @@ h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow
 h2 {font-size: 20px; text-transform: uppercase; color: #8E8E96}
 h2.contact {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700; text-transform: none; color: #fff}
 h3.contact {font-family: 'Bitter', serif; font-size: 28px; font-weight: 400; text-transform: none; color: #fff}
+h4.contact {font-family: 'Bitter', serif; font-size: 13px; font-weight: 400; text-transform: none; color: #fff}
 h3 {font-size: 16px;}
 p {font-size: 14px; color: #c7c7c7}
 .bitter {font-family: 'Bitter', serif !important;}
@@ -379,4 +380,4 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 :-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 ::-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 :-ms-input-placeholder {direction: rtl; font-family: 'Bitter', serif;}
-.mensaje p {font-family: 'Bitter', serif; font-size: 30px; font-weight: 700; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
+.mensaje p, .contactinfo p {font-family: 'Bitter', serif; font-size: 30px; font-weight: 700; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
