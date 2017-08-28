@@ -12,6 +12,26 @@ if ($(window).width() < 993) {
       var ref = panels[i].attr("data-section-name");
       $(".vnav .active").removeClass("active");
       $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
+
+			if($.scrollify.current().attr('data-section-name') === 'protección'){
+				console.log('protección');
+				$(document).ready(function(){
+					var numOfLines = 6;
+			    var delay = 500;
+			    var fadeTime = 500;
+			    for (i = 0; i < numOfLines + 1; i++) {
+			       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
+			    }
+				});
+			} else {
+				console.log('otra');
+				var numOfLines = 6;
+				var delay = 1000;
+				var fadeTime = 1000;
+				for (i = 0; i < numOfLines + 1; i++) {
+					 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
+				}
+			}
     },
     afterRender:function() {
       var vnav = "<ul class=\"vnav\">";

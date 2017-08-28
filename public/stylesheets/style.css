@@ -261,10 +261,10 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
   font-weight: bold;
 }
 .userinfo p.line1 {
-  -webkit-animation: type .5s 1s steps(20, end) forwards;
-  -moz-animation: type .5s 1s steps(20, end) forwards;
-  -o-animation: type .5s 1s steps(20, end) forwards;
-  animation: type .5s 1s steps(20, end) forwards;
+  -webkit-animation: type .9s 1s steps(20, end) forwards;
+  -moz-animation: type .9s 1s steps(20, end) forwards;
+  -o-animation: type .9s 1s steps(20, end) forwards;
+  animation: type .9s 1s steps(20, end) forwards;
 }
 
 .userinfo p span.cursor1 {
@@ -275,45 +275,45 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 }
 
 .userinfo p.line2 {
-  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-  -moz-animation: type .5s 4.25s steps(20, end) forwards;
-  -o-animation: type .5s 4.25s steps(20, end) forwards;
-  animation: type .5s 4.25s steps(20, end) forwards;
+  -webkit-animation: type .9s 2.35s steps(20, end) forwards;
+  -moz-animation: type .9s 2.35s steps(20, end) forwards;
+  -o-animation: type .9s 2.35s steps(20, end) forwards;
+  animation: type .9s 2.35s steps(20, end) forwards;
 }
 
 .userinfo p span.cursor2 {
-  -webkit-animation: blink 1s 5.25s 2 forwards;
-  -moz-animation: blink 1s 5.25s 2 forwards;
-  -o-animation: blink 1s 5.25s 2 forwards;
-  animation: blink 1s 5.25s 2 forwards;
+  -webkit-animation: blink 1s 3.25s 2 forwards;
+  -moz-animation: blink 1s 3.25s 2 forwards;
+  -o-animation: blink 1s 3.25s 2 forwards;
+  animation: blink 1s 3.25s 2 forwards;
 }
 
 .userinfo p.line3 {
-  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
-  -moz-animation: type .5s 7.5s steps(20, end) forwards;
-  -o-animation: type .5s 7.5s steps(20, end) forwards;
-  animation: type .5s 7.5s steps(20, end) forwards;
+  -webkit-animation: type .9s 4.5s steps(20, end) forwards;
+  -moz-animation: type .9s 4.5s steps(20, end) forwards;
+  -o-animation: type .9s 4.5s steps(20, end) forwards;
+  animation: type .9s 4.5s steps(20, end) forwards;
 }
 
 .userinfo p span.cursor3 {
-  -webkit-animation: blink 1s 8.5s 2 forwards;
-  -moz-animation: blink 1s 8.5s 2 forwards;
-  -o-animation: blink 1s 8.5s 2 forwards;
-  animation: blink 1s 8.5s 2 forwards;
+  -webkit-animation: blink 1s 5.5s 2 forwards;
+  -moz-animation: blink 1s 5.5s 2 forwards;
+  -o-animation: blink 1s 5.5s 2 forwards;
+  animation: blink 1s 5.5s 2 forwards;
 }
 
 .userinfo p.line4 {
-  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
-  -moz-animation: type .5s 10.75s steps(20, end) forwards;
-  -o-animation: type .5s 10.75s steps(20, end) forwards;
-  animation: type .5s 10.75s steps(20, end) forwards;
+  -webkit-animation: type .9s 6.75s steps(20, end) forwards;
+  -moz-animation: type .9s 6.75s steps(20, end) forwards;
+  -o-animation: type .9s 6.75s steps(20, end) forwards;
+  animation: type .9s 6.75s steps(20, end) forwards;
 }
 
 .userinfo p span.cursor4 {
-  -webkit-animation: blink 1s 11.5s infinite;
-  -moz-animation: blink 1s 8.5s infinite;
-  -o-animation: blink 1s 8.5s infinite;
-  animation: blink 1s 8.5s infinite;
+  -webkit-animation: blink 1s 6.5s infinite;
+  -moz-animation: blink 1s 6.5s infinite;
+  -o-animation: blink 1s 6.5s infinite;
+  animation: blink 1s 6.5s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -345,19 +345,49 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
   100% {opacity: 0;}
 }
 @-webkit-keyframes type {
-  to {width: 17em;}
+  to {width: 15em;}
 }
 @-moz-keyframes type {
-  to {width: 17em;}
+  to {width: 15em;}
 }
 @-o-keyframes type {
-  to {width: 17em;}
+  to {width: 15em;}
 }
 @keyframes type {
-  to {width: 17em;}
+  to {width: 15em;}
 }
 
 /* protección */
+.shieldwrap {position: relative;}
+#shieldscene {position: absolute; height: 200px; width: 100vw;}
+.shieldbinary {
+	font-family: 'Bitter', serif;
+	position: absolute !important;
+	/*background: -webkit-linear-gradient(#eee, #030314);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+	width: 232px !important;
+  padding: 10px 0 5px;
+}
+.shieldbinary:first-child {
+	top: 13rem !important;
+	left: 1rem !important;
+	opacity: 0.9;
+}
+.shieldbinary:nth-child(2) {
+	top: 4rem !important;
+  right: 10rem !important;
+  left: auto !important;
+	opacity: 0.5;
+}
+.shieldbinary:nth-child(3) {
+	top: 21rem !important;
+  left: auto !important;
+  right: 23rem !important;
+	opacity: 0.3;
+}
+.shieldbinary p {font-size: 12px; margin-bottom: 1px; display: none; max-height: 15px;}
+.shieldbinary p span {display: inline-block; color: #D50D0E;}
 #shield.fix {height: 100% !important}
 .tempicon {width: 165px; height: 165px; border-radius: 50%; background: #CC0506; display: block; margin: 2rem auto 1rem;}
 .show#masproteccion {display: inline-block !important; width: 100% !important;}
