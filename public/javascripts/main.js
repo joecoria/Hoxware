@@ -73,10 +73,6 @@ $(document).ready(function() {
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
-$('#masinfo').click(function() {
-	$('#introinfo').toggleClass('fix');
-});
-
 // parallax?
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);

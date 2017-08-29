@@ -70,7 +70,6 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 .glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
 .heading:before {transform: translateX(-1px); text-shadow: 2px 0 #fff}
 .heading:after {transform: translateX(1px);  text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
-#introinfo.fix {height: 100% !important}
 @keyframes noise-anim {
 	0% {clip: rect(21px, 9999px, 57px, 0);}
 	5% {clip: rect(21px, 9999px, 80px, 0);}
@@ -436,6 +435,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 /* medias */
 @media (max-width: 575px) {
 	.desk {display: none !important;}
+	.nodesk {display: block}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
@@ -444,6 +444,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 
 @media (min-width: 576px) and (max-width: 767px) {
 	.desk {display: none !important;}
+	.nodesk {display: block}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
@@ -452,11 +453,16 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.desk {display: none !important;}
+	.nodesk {display: block}
 	form, .mensaje {width: 80%; margin: 3rem auto;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 10px;}
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.nodesk {display: none;}
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	.nodesk {display: none;}
+}
