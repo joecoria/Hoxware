@@ -435,7 +435,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 /* medias */
 @media (max-width: 575px) {
 	.desk {display: none !important;}
-	.nodesk {display: block}
+	.nodesk {display: block;}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
@@ -444,7 +444,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 
 @media (min-width: 576px) and (max-width: 767px) {
 	.desk {display: none !important;}
-	.nodesk {display: block}
+	.nodesk {display: block;}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
@@ -453,7 +453,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.desk {display: none !important;}
-	.nodesk {display: block}
+	.nodesk {display: block;}
 	form, .mensaje {width: 80%; margin: 3rem auto;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 10px;}
