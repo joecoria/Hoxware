@@ -4,7 +4,7 @@ block content
   .container-fluid.nosidepadding.dottedbg.panel#intro(data-section-name='inicio')
     .container.vertical-center
       .col-md-12.text-center
-        .row.justify-content-md-center
+        .row.justify-content-center
           .col-6#hoxware
             img(src='/images/logo.png', class='img-fluid')
   //- ¿Qué pasaría?
@@ -15,7 +15,7 @@ block content
           h2 <span class="hilite">Afecta tu operatividad, imagen y economía,</span> Siendo una práctica habitual malintencionada
           .learnmore <span data-toggle="collapse" data-target="#masinfo"> SABER MÁS </span>
           .collapse#masinfo.text-left
-            .row.justify-content-md-center
+            .row.justify-content-center
               .col-md-10
                 p El robo y el secuestro de información es muy común y afecta hoy en día a muchas organizaciones.
                 p Explotando vulnerabilidades existentes:
@@ -30,7 +30,7 @@ block content
   .container-fluid.panel#damage(data-section-name='daños')
     .container.vertical-center
       .col-md-12.text-center
-        .userwrap
+        .userwrap.desk
           #scene(data-relative-input="true", data-hover-only="true", data-calibrate-x="false", data-calibrate-y="true", data-invert-x="false", data-invert-y="false", data-limit-x="false", data-limit-y="false", data-scalar-x="2", data-scalar-y="8", data-friction-x="0.4", data-friction-y="0.8", data-origin-x="0.0", data-origin-y="0.0", data-precision="1", data-pointer-events="false")
             .userinfo.layer(data-depth="0.25")
               p.line1 > Usuario: Ramón<span class="cursor1">_</span>
@@ -56,14 +56,14 @@ block content
           h1 El daño operativo puede <br>ocasionar incumplimiento<br> en compromisos<br> y servicios
           .learnmore <span data-toggle="collapse" data-target="#masdedamage"> SABER MÁS </span>
           .collapse#masdedamage.text-left
-            .row.justify-content-md-center
+            .row.justify-content-center
               .col-md-6.boxline
                 h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
   //- Protección
   .container-fluid.panel#shield(data-section-name='protección')
     .container.vertical-center
       .col-md-12.text-center
-        .shieldwrap
+        .shieldwrap.desk
           #shieldscene(data-relative-input="true", data-hover-only="true", data-calibrate-x="false", data-calibrate-y="true", data-invert-x="false", data-invert-y="false", data-limit-x="false", data-limit-y="false", data-scalar-x="2", data-scalar-y="8", data-friction-x="0.4", data-friction-y="0.8", data-origin-x="0.0", data-origin-y="0.0", data-precision="1", data-pointer-events="false")
             .shieldbinary.justify.layer(data-depth="1.0")
               p.justify.dtext1 01100001 <span>01101100</span> 01101100 01111001 
@@ -91,7 +91,7 @@ block content
           .learnmore <span data-toggle="collapse" data-target="#masproteccion" id="shieldmore"> SABER MÁS </span>
           .collapse#masproteccion
             .container
-              .row.justify-content-md-center
+              .row.justify-content-center
                 .col-md-8
                   h2 Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
                   .row
@@ -118,31 +118,31 @@ block content
   //- Servicios
   .container-fluid.panel#services(data-section-name='servicios')
     .container.padding-vertical
-      .row.justify-content-md-center
+      .row.justify-content-center
         .col-sm-10
           h2.services Te brindamos la protección que necesitas identificando las amenazas potenciales sobre tus recursos:
-            .row.padding-top
-              .col-lg-4.col-md-6.col-12.nosidepadding
+            .row.justify-content-center.padding-top
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv Web Pentest
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
-              .col-lg-4.col-md-6.col-12.nosidepadding
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv Internal Pentest
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
-              .col-lg-4.col-md-6.col-12.nosidepadding
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv WiFi Security Analysis
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
-              .col-lg-4.col-md-6.col-12.nosidepadding
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv Phishing Prevention Campaing
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
-              .col-lg-4.col-md-6.col-12.nosidepadding
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv Hardening
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
-              .col-lg-4.col-md-6.col-12.nosidepadding
+              .col-lg-4.col-md-6.col-10.nosidepadding
                 .box
                   h3.serv Analysis
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
@@ -153,7 +153,7 @@ block content
       .col-md-12.text-center
         h2.contact ¿Vas a esperar hasta perder tu información?
         h3.contact Escríbenos:
-        form#contact.col-center
+        form#contact
           .form-group
             input(type='text', class='form-control', id='name', name='name', placeholder='Nombre', autocomplete='false', required='required') 
           .form-group
@@ -161,20 +161,20 @@ block content
           .form-group 
             button(disabled="disabled", id='contactus') Quiero contactarlos
         div.contact.escondido
-          .row.justify-content-md-center.text-center
+          .row.justify-content-center.text-center
             .col-sm-8.mensaje
               p ¡Ya se envió tu mensaje!
               p Muy pronto nos comunicaremos contigo.
-    .container-fluid.dottedbg.panel(data-section-name='contacto2')
+    .container-fluid.dottedbg
       .container.padding-vertical
-        .row.justify-content-md-center
+        .row.justify-content-center
           .col-sm-8
-            .row
-              .col
-                a(class="twitter-timeline" data-width="300" data-height="650" data-theme="dark" data-link-color="#D50D0E" href="https://twitter.com/danna_kiedis") Tweets by danna_kiedis
+            .row.justify-content-center
+              .col-6.col-md-6
+                a(class="twitter-timeline" data-width="300" data-height="450" data-theme="dark" data-link-color="#D50D0E" href="https://twitter.com/danna_kiedis") Tweets by danna_kiedis
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 //- script(async, src="//platform.twitter.com/widgets.js", charset="utf-8")
-              .col.contactinfo.padding-vertical
+              .col-8.col-md-6.contactinfo.padding-vertical
                 h4.contact Teléfono:
                 p 55-23-24-12
                 h4.contact E-mail:

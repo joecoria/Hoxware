@@ -30,8 +30,8 @@ if ($(window).width() < 993) {
 				console.log('otra');
 				$('.userinfo').removeClass('moved');
 				var numOfLines = 8;
-				var delay = 300;
-				var fadeTime = 300;
+				var delay = 100;
+				var fadeTime = 100;
 				for (i = 0; i < numOfLines + 1; i++) {
 					 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
 				}

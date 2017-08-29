@@ -23,6 +23,7 @@ span {color: #D50D0E;}
 .padding-vertical {padding-top: 2rem; padding-bottom: 2rem;}
 .padding-top {padding-top: 2rem;}
 
+
 /* general */
 h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size: 22px}
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
@@ -430,3 +431,23 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 ::-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 :-ms-input-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 .mensaje p, .contactinfo p {font-family: 'Bitter', serif; font-size: 30px; font-weight: 700; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
+
+/* medias */
+@media (max-width: 575px) {
+	form, .mensaje {width: 90%; margin: 3rem auto;}
+	#contact .form-group {margin-bottom: 1rem;}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	form, .mensaje {width: 90%; margin: 3rem auto;}
+	#contact .form-group {margin-bottom: 1rem;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.desk {display: none !important;}
+	form, .mensaje {width: 80%; margin: 3rem auto;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
