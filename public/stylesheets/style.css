@@ -44,7 +44,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size:
 .navlinks a:hover {color: #fff; text-decoration: none !important}
 .navtoggle {position: fixed; top: 1rem; right: 1rem;}
 .navtoggle span {color: #EAE7E7; display: block;}
-span.icon-bar {width: 25px; height: 4px; border-radius: 1px; background: #EAE7E7; margin: 5px auto; padding: 0;}
+span.icon-bar {width: 20px; height: 2px; border-radius: 1px; background: #EAE7E7; margin: 3px auto; padding: 0;}
 nav img {width: 45px !important;}
 .escondido.animated {display: block}
 /* vertical nav */

@@ -54,11 +54,11 @@ $('.logo').hide();
 $(window).on("resize scroll", function (){
   if (Math.round($(window).scrollTop()) > 200) {
 		$( "#hoxware" ).hide("fade");
-    $('.logo').show("puff", 1000);
+    $('.logo').show("puff", 600);
   }
 	if (Math.round($(window).scrollTop()) == 3) {
 		$( "#hoxware" ).show("pulsate");
-    $('.logo').hide("puff", 500);
+    $('.logo').hide("puff", 200);
   }
 });
 $('.btn-contact').click(function(){
@@ -80,6 +80,8 @@ var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 var shieldscene = document.getElementById('shieldscene');
 var parallax = new Parallax(shieldscene);
+
+// products
 
 // form
 var miid = '';

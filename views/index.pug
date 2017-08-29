@@ -2,14 +2,14 @@ extends layout
 
 block content
   .container-fluid.nosidepadding.dottedbg.panel#intro(data-section-name='inicio')
-    .container-fluid.vertical-center
+    .container.vertical-center
       .col-md-12.text-center
         .row.justify-content-md-center
           .col-6#hoxware
             img(src='/images/logo.png', class='img-fluid')
   //- ¿Qué pasaría?
   .container-fluid.panel#introinfo(data-section-name='info')
-    .container-fluid.vertical-center
+    .container.vertical-center
       .col-md-12.text-center
           h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <br> <span class="glitch heading" data-text="INFORMACIÓN">INFORMACIÓN</span> DE TU <br> ORGANIZACIÓN?
           h2 <span class="hilite">Afecta tu operatividad, imagen y economía,</span> Siendo una práctica habitual malintencionada
@@ -28,7 +28,7 @@ block content
                     p.justify Utilizan la información para realizar sabotaje industrial.
   //- Daños    
   .container-fluid.panel#damage(data-section-name='daños')
-    .container-fluid.vertical-center
+    .container.vertical-center
       .col-md-12.text-center
         .userwrap
           #scene(data-relative-input="true", data-hover-only="true", data-calibrate-x="false", data-calibrate-y="true", data-invert-x="false", data-invert-y="false", data-limit-x="false", data-limit-y="false", data-scalar-x="2", data-scalar-y="8", data-friction-x="0.4", data-friction-y="0.8", data-origin-x="0.0", data-origin-y="0.0", data-precision="1", data-pointer-events="false")
@@ -61,7 +61,7 @@ block content
                 h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
   //- Protección
   .container-fluid.panel#shield(data-section-name='protección')
-    .container-fluid.vertical-center
+    .container.vertical-center
       .col-md-12.text-center
         .shieldwrap
           #shieldscene(data-relative-input="true", data-hover-only="true", data-calibrate-x="false", data-calibrate-y="true", data-invert-x="false", data-invert-y="false", data-limit-x="false", data-limit-y="false", data-scalar-x="2", data-scalar-y="8", data-friction-x="0.4", data-friction-y="0.8", data-origin-x="0.0", data-origin-y="0.0", data-precision="1", data-pointer-events="false")
@@ -123,27 +123,27 @@ block content
           h2.services Te brindamos la protección que necesitas identificando las amenazas potenciales sobre tus recursos:
             .row.padding-top
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv Web Pentest
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv Internal Pentest
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv WiFi Security Analysis
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv Phishing Prevention Campaing
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv Hardening
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
               .col-lg-4.col-md-6.col-12.nosidepadding
-                .box.red
+                .box
                   h3.serv Analysis
                   p.bitter.thin Ejecución de análisis con herramienta automática Técnicas (DAST, Black Box, White Box).
   
