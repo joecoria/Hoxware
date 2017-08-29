@@ -221,25 +221,25 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 .userinfo:first-child {
 	filter: blur(1px);
 	top: 5rem !important;
-	left: 6rem !important;
+	left: 2rem !important;
 	opacity: 0.2;
 }
 .userinfo:nth-child(2) {
   filter: blur(1px);
   top: 1rem !important;
-  right: 16rem !important;
+  right: 18rem !important;
 	left: auto !important;
   opacity: 0.4;
 }
 .userinfo:nth-child(3) {
 	filter: blur(1px);
   top: 16rem !important;
-  left: 12rem !important;
+  left: 8rem !important;
   opacity: 0.6;
 }
 .userinfo:nth-child(4) {
   top: 13rem !important;
-  right: 13rem !important;
+  right: 15rem !important;
 	left: auto !important;
 	opacity: 1;
 }
@@ -371,12 +371,12 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 }
 .shieldbinary:first-child {
 	top: 13rem !important;
-	left: 1rem !important;
+	left: -3rem !important;
 	opacity: 0.9;
 }
 .shieldbinary:nth-child(2) {
 	top: 4rem !important;
-  right: 10rem !important;
+  right: 12rem !important;
   left: auto !important;
 	opacity: 0.5;
 }
