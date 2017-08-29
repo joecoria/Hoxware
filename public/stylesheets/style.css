@@ -36,7 +36,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size:
 .headalter {margin: 9rem auto 1rem;}
 
 /* nav */
-.nav-wrapper {position: fixed; min-width: 100vw; z-index: 1; background: transparent;}
+.nav-wrapper {position: fixed; width: 100vw; z-index: 1; background: transparent;}
 .nav-wrapper .logo {width: 50px; height: 50px; position: absolute; top: 1rem; left: 1rem;}
 .nav-wrapper .menu {position: fixed; top: 1rem; right: 1rem; max-width: 200px; z-index: 1;}
 .nav-wrapper .menu #accordion {position: fixed; top: 4rem; right: 1rem;}
@@ -70,6 +70,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 .glitch:before {animation: noise-anim-2 3s infinite linear alternate-reverse; clip: rect(0, 100%, 0, 0); content: attr(data-text); top: 0; left: 0; moz-animation: noise-anim-2 2s infinite linear alternate-reverse; overflow: hidden; position: absolute; text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em; webkit-animation: noise-anim-2 2s infinite linear alternate-reverse;}
 .heading:before {transform: translateX(-1px); text-shadow: 2px 0 #fff}
 .heading:after {transform: translateX(1px);  text-shadow: rgba(18, 60, 206, 0.7) 0.08em 0.04em, rgba(54, 229, 10, 0.7) -0.3em -0.04em, rgba(152, 31, 31, 0.7) -0.1em 0.09em;}
+#introinfo.fix {height: 100% !important}
 @keyframes noise-anim {
 	0% {clip: rect(21px, 9999px, 57px, 0);}
 	5% {clip: rect(21px, 9999px, 80px, 0);}
@@ -226,7 +227,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 	opacity: 0;
 }
 .moved.userinfo:first-child {
-	transition: all 2s ease-out;
+	transition: all 1s ease-out;
 	top: 5rem !important;
 	opacity: 0.2;
 }
@@ -434,18 +435,26 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 
 /* medias */
 @media (max-width: 575px) {
+	.desk {display: none !important;}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
+	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
+	#cd-vertical-nav {right: 0px;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+	.desk {display: none !important;}
 	form, .mensaje {width: 90%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
+	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
+	#cd-vertical-nav {right: 0px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.desk {display: none !important;}
 	form, .mensaje {width: 80%; margin: 3rem auto;}
+	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
+	#cd-vertical-nav {right: 10px;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {}

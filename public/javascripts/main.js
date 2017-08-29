@@ -1,57 +1,52 @@
 // Scrollify!
-if ($(window).width() < 993) {
-	console.log('chico..?');
-	$.scrollify.destroy();
-} else {
-	console.log('grande?');
-	$.scrollify({
-		section:".panel",
-		scrollSpeed:900,
-		overflowScroll: true,
-    before:function(i,panels) {
-      var ref = panels[i].attr("data-section-name");
-      $(".vnav .active").removeClass("active");
-      $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
 
-			if($.scrollify.current().attr('data-section-name') === 'daños'){
-				console.log('daños');
-				$('.userinfo').addClass('moved');
-			} else if($.scrollify.current().attr('data-section-name') === 'protección'){
-				console.log('protección');
-				$(document).ready(function(){
-					var numOfLines = 8;
-			    var delay = 800;
-			    var fadeTime = 800;
-			    for (i = 0; i < numOfLines + 1; i++) {
-			       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
-			    }
-				});
-			} else {
-				console.log('otra');
-				$('.userinfo').removeClass('moved');
+$.scrollify({
+	section:".panel",
+	scrollSpeed:900,
+	overflowScroll: true,
+  before:function(i,panels) {
+    var ref = panels[i].attr("data-section-name");
+    $(".vnav .active").removeClass("active");
+    $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
+		$.scrollify.update();
+		if($.scrollify.current().attr('data-section-name') === 'daños'){
+			console.log('daños');
+			$('.userinfo').addClass('moved');
+		} else if($.scrollify.current().attr('data-section-name') === 'protección'){
+			console.log('protección');
+			$(document).ready(function(){
 				var numOfLines = 8;
-				var delay = 100;
-				var fadeTime = 100;
-				for (i = 0; i < numOfLines + 1; i++) {
-					 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
-				}
+		    var delay = 800;
+		    var fadeTime = 800;
+		    for (i = 0; i < numOfLines + 1; i++) {
+		       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
+		    }
+			});
+		} else {
+			console.log('otra');
+			$('.userinfo').removeClass('moved');
+			var numOfLines = 8;
+			var delay = 100;
+			var fadeTime = 100;
+			for (i = 0; i < numOfLines + 1; i++) {
+				 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
 			}
-    },
-    afterRender:function() {
-      var vnav = "<ul class=\"vnav\">";
-      var activeClass = "";
-      $(".panel").each(function(i) {
-        activeClass = "";
-        if(i===0) {
-          activeClass = "active";
-        }
-        vnav += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-      });
-      vnav += "</ul>";
-      $("a.vlink").on("click",$.scrollify.move);
-    }
-	});
-};
+		}
+  },
+  afterRender:function() {
+    var vnav = "<ul class=\"vnav\">";
+    var activeClass = "";
+    $(".panel").each(function(i) {
+      activeClass = "";
+      if(i===0) {
+        activeClass = "active";
+      }
+      vnav += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+    });
+    vnav += "</ul>";
+    $("a.vlink").on("click",$.scrollify.move);
+  }
+});
 
 // navbar
 $('.logo').hide();
@@ -77,6 +72,9 @@ $(document).ready(function() {
 // overlap fix
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
+});
+$('#masinfo').click(function() {
+	$('#introinfo').toggleClass('fix');
 });
 
 // parallax?
