@@ -15,6 +15,7 @@ if ($(window).width() < 993) {
 
 			if($.scrollify.current().attr('data-section-name') === 'daños'){
 				console.log('daños');
+				$('.userinfo').addClass('moved');
 			} else if($.scrollify.current().attr('data-section-name') === 'protección'){
 				console.log('protección');
 				$(document).ready(function(){
@@ -27,6 +28,7 @@ if ($(window).width() < 993) {
 				});
 			} else {
 				console.log('otra');
+				$('.userinfo').removeClass('moved');
 				var numOfLines = 8;
 				var delay = 300;
 				var fadeTime = 300;

@@ -220,25 +220,45 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 }
 .userinfo:first-child {
 	filter: blur(1px);
-	top: 5rem !important;
+	top: 25rem !important;
 	left: 2rem !important;
+	opacity: 0;
+}
+.moved.userinfo:first-child {
+	transition: all 2s ease-out;
+	top: 5rem !important;
 	opacity: 0.2;
 }
 .userinfo:nth-child(2) {
   filter: blur(1px);
-  top: 1rem !important;
+  top: 25rem !important;
   left: 45rem !important;
-  opacity: 0.4;
+  opacity: 0;
+}
+.moved.userinfo:nth-child(2) {
+	transition: all 1s ease-out;
+	top: 1rem !important;
+	opacity: 0.4;
 }
 .userinfo:nth-child(3) {
 	filter: blur(1px);
-  top: 16rem !important;
+  top: 25rem !important;
   left: 8rem !important;
-  opacity: 0.6;
+  opacity: 0;
+}
+.moved.userinfo:nth-child(3) {
+	transition: all 2s ease-out;
+	top: 16rem !important;
+	opacity: 0.6;
 }
 .userinfo:nth-child(4) {
-  top: 13rem !important;
+  top: 25rem !important;
   left: 50rem !important;
+	opacity: 0;
+}
+.moved.userinfo:nth-child(4) {
+	transition: all 2s ease-out;
+	top: 13rem !important;
 	opacity: 1;
 }
 .userinfo p {
