@@ -13,19 +13,21 @@ if ($(window).width() < 993) {
       $(".vnav .active").removeClass("active");
       $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
 
-			if($.scrollify.current().attr('data-section-name') === 'protección'){
+			if($.scrollify.current().attr('data-section-name') === 'daños'){
+				console.log('daños');
+			} else if($.scrollify.current().attr('data-section-name') === 'protección'){
 				console.log('protección');
 				$(document).ready(function(){
-					var numOfLines = 6;
-			    var delay = 400;
-			    var fadeTime = 400;
+					var numOfLines = 8;
+			    var delay = 800;
+			    var fadeTime = 800;
 			    for (i = 0; i < numOfLines + 1; i++) {
 			       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
 			    }
 				});
 			} else {
 				console.log('otra');
-				var numOfLines = 6;
+				var numOfLines = 8;
 				var delay = 300;
 				var fadeTime = 300;
 				for (i = 0; i < numOfLines + 1; i++) {

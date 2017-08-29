@@ -210,7 +210,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 
 /* daños */
 .userwrap {position: relative;}
-#scene {position: absolute; height: 200px; width: 100vw;}
+#scene {position: absolute; height: 200px; width: 100%}
 .userinfo {
 	position: absolute !important;
   background: rgba(3, 3, 20, .7);
@@ -227,8 +227,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 .userinfo:nth-child(2) {
   filter: blur(1px);
   top: 1rem !important;
-  right: 18rem !important;
-	left: auto !important;
+  left: 45rem !important;
   opacity: 0.4;
 }
 .userinfo:nth-child(3) {
@@ -239,8 +238,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 }
 .userinfo:nth-child(4) {
   top: 13rem !important;
-  right: 15rem !important;
-	left: auto !important;
+  left: 50rem !important;
 	opacity: 1;
 }
 .userinfo p {
@@ -359,7 +357,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 
 /* protección */
 .shieldwrap {position: relative;}
-#shieldscene {position: absolute; height: 200px; width: 100vw;}
+#shieldscene {position: absolute; height: 200px; width: 100%}
 .shieldbinary {
 	font-family: 'Bitter', serif;
 	position: absolute !important;
@@ -376,18 +374,17 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 }
 .shieldbinary:nth-child(2) {
 	top: 4rem !important;
-  right: 12rem !important;
-  left: auto !important;
+  left: 44rem !important;
 	opacity: 0.5;
 }
 .shieldbinary:nth-child(3) {
 	top: 21rem !important;
-  left: auto !important;
-  right: 23rem !important;
+  left: 49rem !important;
 	opacity: 0.3;
 }
 .shieldbinary p {font-size: 12px; margin-bottom: 1px; display: none; max-height: 15px;}
-.shieldbinary p span {display: inline-block; color: #D50D0E;}
+.shieldbinary p:last-child {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
+.shieldbinary p span {display: inline-block; color: #D50D0E; /* -webkit-text-fill-color: #D50D0E; */}
 #shield.fix {height: 100% !important}
 .tempicon {width: 165px; height: 165px; border-radius: 50%; background: #CC0506; display: block; margin: 2rem auto 1rem;}
 .show#masproteccion {display: inline-block !important; width: 100% !important;}
