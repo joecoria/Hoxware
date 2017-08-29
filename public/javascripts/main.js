@@ -17,8 +17,8 @@ if ($(window).width() < 993) {
 				console.log('protección');
 				$(document).ready(function(){
 					var numOfLines = 6;
-			    var delay = 500;
-			    var fadeTime = 500;
+			    var delay = 400;
+			    var fadeTime = 400;
 			    for (i = 0; i < numOfLines + 1; i++) {
 			       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
 			    }
@@ -26,8 +26,8 @@ if ($(window).width() < 993) {
 			} else {
 				console.log('otra');
 				var numOfLines = 6;
-				var delay = 1000;
-				var fadeTime = 1000;
+				var delay = 300;
+				var fadeTime = 300;
 				for (i = 0; i < numOfLines + 1; i++) {
 					 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
 				}
@@ -78,6 +78,8 @@ $('#shieldmore').click(function() {
 // parallax?
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
+var shieldscene = document.getElementById('shieldscene');
+var parallax = new Parallax(shieldscene);
 
 // form
 var miid = '';
