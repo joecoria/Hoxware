@@ -83,11 +83,11 @@ $('.box').mouseover(function() {
 	red = '#' + pid + ' .red';
 	$(box).mouseover(function() {
 		console.log(product);
-		$(box).hide();
-		$(red).show();
+		$(box).hide('slideUp');
+		$(red).show('slideUp');
 		$(red).mouseout(function() {
-			$(red).hide();
-			$(box).show();
+			$(red).hide('slideUp');
+			$(box).show('slideUp');
 		});
 	});
 });
