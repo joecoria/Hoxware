@@ -73,6 +73,25 @@ $(document).ready(function() {
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
+
+// slideToggle
+$('.box').mouseover(function() {
+	$divid = $(this).parents('div');
+	pid = $divid.attr('id');
+ 	product = '#' + pid;
+	box = '#' + pid + ' .box';
+	red = '#' + pid + ' .red';
+	$(box).mouseover(function() {
+		console.log(product);
+		$(box).hide();
+		$(red).show();
+		$(red).mouseout(function() {
+			$(red).hide();
+			$(box).show();
+		});
+	});
+});
+
 // parallax?
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);

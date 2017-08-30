@@ -414,7 +414,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 h2.services {font-family: 'Bitter', serif; font-size: 32px; font-weight: 400; text-transform: none; color: #fff}
 h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-transform: uppercase; text-overflow: clip;}
 .box {border: 8px solid; padding: 20px; margin: 5px; color: #fff; height: 360px; min-width: 110px; cursor: pointer; overflow: hidden;}
-.red {background: #D50D0E;}
+.red {background: #D50D0E; display: none; border: 8px solid; padding: 20px; margin: 5px; color: #fff; height: 360px; min-width: 110px; cursor: pointer; overflow: hidden;}
 .box p {font-size: 18px; margin-top: 15px; line-height: 24px; color: #fff;}
 .hvr-sweep-to-top {display: block;}
 .hvr-sweep-to-top::before {background: #D50D0E; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
