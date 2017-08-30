@@ -407,10 +407,7 @@ h1 span.glitch {/* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.72);*/ color: 
 .shieldbinary p:last-child {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
 .shieldbinary p span {display: inline-block; color: #D50D0E; /* -webkit-text-fill-color: #D50D0E; */}
 #shield.fix {height: 100% !important}
-.icon1 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/0_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
-.icon2 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/1_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
-.icon3 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/2_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
-.icon4 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/3_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
+.tempicon {width: 165px; height: 165px; border-radius: 50%; background: #CC0506; display: block; margin: 2rem auto 1rem;}
 .show#masproteccion {display: inline-block !important; width: 100% !important;}
 
 /* servicios */
