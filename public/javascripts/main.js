@@ -75,22 +75,22 @@ $('#shieldmore').click(function() {
 });
 
 // slideToggle
-$('.box').mouseover(function() {
-	$divid = $(this).parents('div');
-	pid = $divid.attr('id');
- 	product = '#' + pid;
-	box = '#' + pid + ' .box';
-	red = '#' + pid + ' .red';
-	// $(box).mouseover(function() {
-	// 	console.log(product);
-	// 	$(box).hide('slideUp');
-	// 	$(red).show('slideUp');
-	// 	$(red).mouseout(function() {
-	// 		$(red).hide('slideUp');
-	// 		$(box).show('slideUp');
-	// 	});
-	// });
-});
+// $('.box').mouseover(function() {
+// 	$divid = $(this).parents('div');
+// 	pid = $divid.attr('id');
+//  	product = '#' + pid;
+// 	box = '#' + pid + ' .box';
+// 	red = '#' + pid + ' .red';
+// 	// $(box).mouseover(function() {
+// 	// 	console.log(product);
+// 	// 	$(box).hide('slideUp');
+// 	// 	$(red).show('slideUp');
+// 	// 	$(red).mouseout(function() {
+// 	// 		$(red).hide('slideUp');
+// 	// 		$(box).show('slideUp');
+// 	// 	});
+// 	// });
+// });
 
 // parallax?
 var scene = document.getElementById('scene');
