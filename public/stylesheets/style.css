@@ -419,8 +419,12 @@ h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-t
 #wp, #ip, #wsa, #pp, #ha, #an {position: relative; margin: 5px; border: 8px solid #fff; color: #fff; height: 360px; min-width: 110px; cursor: pointer; overflow: hidden;}
 #wp:hover > .box, #ip:hover > .box, #wsa:hover > .box, #pp:hover > .box, #ha:hover > .box, #an:hover > .box {-webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0); height: 0; padding: 0 20px; opacity: 0;}
 #wp:hover > .red, #ip:hover > .red, #wsa:hover > .red, #pp:hover > .red, #ha:hover > .red, #an:hover > .red {height: 100%; opacity: 1; -webkit-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1);}
-.box {padding: 20px; -webkit-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); -webkit-transform-origin: bottom; -o-transform-origin: bottom; -ms-transform-origin: bottom; transform-origin: bottom; -webkit-transition: all 0.26s ease-out; -o-transition: all 0.26s ease; -ms-transition: all 0.26s ease; transition: all 0.26s ease;}
-.red {background: #D50D0E; padding: 20px; opacity: 0; -webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: bottom; -o-transform-origin: bottom; -ms-transform-origin: bottom; transform-origin: bottom; -webkit-transition: all 0.26s ease-out; -o-transition: all 0.26s ease; -ms-transition: all 0.26s ease; transition: all 0.26s ease;}
+.box {padding: 20px; -webkit-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); -webkit-transform-origin: bottom; -o-transform-origin: bottom; -ms-transform-origin: bottom; transform-origin: bottom; -webkit-transition: all 0.50s ease-out; -o-transition: all 0.50s ease; -ms-transition: all 0.50s ease; transition: all 0.50s ease;}
+.box .binary {font-family: 'Bitter', serif; width: 100%;}
+.box h3 {margin-top: 15%;}
+.binary p {margin-bottom: 0 !important; width: 100%; font-size: 17px; word-break: break-all; text-align: center;}
+.binary .grad {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
+.red {background: #D50D0E; padding: 20px; opacity: 0; -webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: bottom; -o-transform-origin: bottom; -ms-transform-origin: bottom; transform-origin: bottom; -webkit-transition: all 0.50s ease-out; -o-transition: all 0.50s ease; -ms-transition: all 0.50s ease; transition: all 0.50s ease;}
 .red p {font-size: 18px; margin-top: 15px; line-height: 24px; color: #fff;}
 
 /* contacto */
