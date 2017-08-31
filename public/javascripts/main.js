@@ -56,8 +56,8 @@ $(window).on("resize scroll", function (){
     $('.logo').show("puff", 200);
   }
 	if (Math.round($(window).scrollTop()) == 3) {
-		$( "#hoxware" ).show("pulsate", 100);
-    $('.logo').hide("puff", 200);
+		$( "#hoxware" ).show("pulsate", 200);
+    $('.logo').hide("puff", 100);
   }
 });
 $('.btn-contact').click(function(){
