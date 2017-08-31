@@ -53,7 +53,7 @@ $('.logo').hide();
 $(window).on("resize scroll", function (){
   if (Math.round($(window).scrollTop()) > 200) {
 		$( "#hoxware" ).hide("fade");
-    $('.logo').show("puff", 600);
+    $('.logo').show("puff", 200);
   }
 	if (Math.round($(window).scrollTop()) == 3) {
 		$( "#hoxware" ).show("pulsate", 100);
