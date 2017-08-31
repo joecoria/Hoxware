@@ -9,10 +9,10 @@ $.scrollify({
     $(".vnav .active").removeClass("active");
     $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
 		$.scrollify.update();
-		if($.scrollify.current().attr('data-section-name') === 'daños'){
+		if($.scrollify.current().attr('data-section-name') === 'danos'){
 			console.log('daños');
 			$('.userinfo').addClass('moved');
-		} else if($.scrollify.current().attr('data-section-name') === 'protección'){
+		} else if($.scrollify.current().attr('data-section-name') === 'proteccion'){
 			console.log('protección');
 			$(document).ready(function(){
 				var numOfLines = 8;
