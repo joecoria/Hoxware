@@ -12,8 +12,14 @@ $.scrollify({
 		if($.scrollify.current().attr('data-section-name') === 'danos'){
 			console.log('daños');
 			$('.userinfo').addClass('moved');
+			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').addClass('animate');
 		} else if($.scrollify.current().attr('data-section-name') === 'proteccion'){
-			console.log('protección');
+			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
+			$('.userinfo').removeClass('moved');
+			$('#shieldmore').click(function() {
+				console.log('entra');
+				$('#last').toggle('fade');
+			});
 			$(document).ready(function(){
 				var numOfLines = 8;
 		    var delay = 800;
@@ -23,7 +29,7 @@ $.scrollify({
 		    }
 			});
 		} else {
-			console.log('otra');
+			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
 			var numOfLines = 8;
 			var delay = 100;

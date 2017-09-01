@@ -185,14 +185,54 @@ h1 span.glitch {color: #fff}
 .moved.userinfo:nth-child(4) {transition: all 2s ease-out; top: 13rem !important; opacity: 1;}
 .userinfo p {position: relative; margin-bottom: 4px; left: 50%; margin-left: -8.5em; text-align: left; font-size: 1em; font-family: monospace; white-space: nowrap; overflow: hidden; width: 0; color: #fff;}
 .userinfo p span {color: #fff; font-weight: bold;}
-.userinfo p.line1 {-webkit-animation: type .9s 1s steps(20, end) forwards; -moz-animation: type .9s 1s steps(20, end) forwards; -o-animation: type .9s 1s steps(20, end) forwards; animation: type .9s 1s steps(20, end) forwards;}
-.userinfo p span.cursor1 {-webkit-animation: blink 1s 2s 2 forwards; -moz-animation: blink 1s 2s 2 forwards; -o-animation: blink 1s 2s 2 forwards; animation: blink 1s 2s 2 forwards;}
-.userinfo p.line2 {-webkit-animation: type .9s 2.35s steps(20, end) forwards; -moz-animation: type .9s 2.35s steps(20, end) forwards; -o-animation: type .9s 2.35s steps(20, end) forwards; animation: type .9s 2.35s steps(20, end) forwards;}
-.userinfo p span.cursor2 {-webkit-animation: blink 1s 3.25s 2 forwards; -moz-animation: blink 1s 3.25s 2 forwards; -o-animation: blink 1s 3.25s 2 forwards; animation: blink 1s 3.25s 2 forwards;}
-.userinfo p.line3 {-webkit-animation: type .9s 4.5s steps(20, end) forwards; -moz-animation: type .9s 4.5s steps(20, end) forwards; -o-animation: type .9s 4.5s steps(20, end) forwards; animation: type .9s 4.5s steps(20, end) forwards;}
-.userinfo p span.cursor3 {-webkit-animation: blink 1s 5.5s 2 forwards; -moz-animation: blink 1s 5.5s 2 forwards; -o-animation: blink 1s 5.5s 2 forwards; animation: blink 1s 5.5s 2 forwards;}
-.userinfo p.line4 {-webkit-animation: type .9s 6.75s steps(20, end) forwards; -moz-animation: type .9s 6.75s steps(20, end) forwards; -o-animation: type .9s 6.75s steps(20, end) forwards; animation: type .9s 6.75s steps(20, end) forwards;}
-.userinfo p span.cursor4 {-webkit-animation: blink 1s 6.5s infinite; -moz-animation: blink 1s 6.5s infinite; -o-animation: blink 1s 6.5s infinite; animation: blink 1s 6.5s infinite;}
+.userinfo p.line1.animate {
+  -webkit-animation: type .9s 1s steps(20, end) forwards;
+  -moz-animation: type .9s 1s steps(20, end) forwards;
+  -o-animation: type .9s 1s steps(20, end) forwards;
+  animation: type .9s 1s steps(20, end) forwards;
+}
+.userinfo p span.cursor1.animate {
+  -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards;
+}
+.userinfo p.line2.animate {
+  -webkit-animation: type .9s 2.35s steps(20, end) forwards;
+  -moz-animation: type .9s 2.35s steps(20, end) forwards;
+  -o-animation: type .9s 2.35s steps(20, end) forwards;
+  animation: type .9s 2.35s steps(20, end) forwards;
+}
+.userinfo p span.cursor2.animate {
+  -webkit-animation: blink 1s 3.25s 2 forwards;
+  -moz-animation: blink 1s 3.25s 2 forwards;
+  -o-animation: blink 1s 3.25s 2 forwards;
+  animation: blink 1s 3.25s 2 forwards;
+}
+.userinfo p.line3.animate {
+  -webkit-animation: type .9s 4.5s steps(20, end) forwards;
+  -moz-animation: type .9s 4.5s steps(20, end) forwards;
+  -o-animation: type .9s 4.5s steps(20, end) forwards;
+  animation: type .9s 4.5s steps(20, end) forwards;
+}
+.userinfo p span.cursor3.animate {
+  -webkit-animation: blink 1s 5.5s 2 forwards;
+  -moz-animation: blink 1s 5.5s 2 forwards;
+  -o-animation: blink 1s 5.5s 2 forwards;
+  animation: blink 1s 5.5s 2 forwards;
+}
+.userinfo p.line4.animate {
+  -webkit-animation: type .9s 6.75s steps(20, end) forwards;
+  -moz-animation: type .9s 6.75s steps(20, end) forwards;
+  -o-animation: type .9s 6.75s steps(20, end) forwards;
+  animation: type .9s 6.75s steps(20, end) forwards;
+}
+.userinfo p span.cursor4.animate {
+  -webkit-animation: blink 1s 6.5s infinite;
+  -moz-animation: blink 1s 6.5s infinite;
+  -o-animation: blink 1s 6.5s infinite;
+  animation: blink 1s 6.5s infinite;
+}
 @-webkit-keyframes blink {
   0% {opacity: 0;}
   40% {opacity: 0;}
@@ -238,8 +278,8 @@ h1 span.glitch {color: #fff}
 .shieldwrap {position: relative;}
 #shieldscene {position: absolute; height: 200px; width: 100%}
 .shieldbinary {font-family: 'Bitter', serif; position: absolute !important; width: 232px !important; padding: 10px 0 5px;}
-.shieldbinary:first-child {top: 13rem !important; left: -3rem !important; opacity: 0.9;}
-.shieldbinary:nth-child(2) {top: 4rem !important; left: 44rem !important; opacity: 0.5;}
+.shieldbinary:first-child {top: 13rem !important; left: -3rem !important; opacity: 0.6;}
+.shieldbinary:nth-child(2) {top: 4rem !important; left: 44rem !important; opacity: 0.4;}
 .shieldbinary:nth-child(3) {top: 21rem !important; left: 49rem !important; opacity: 0.3;}
 .shieldbinary p {font-size: 12px; margin-bottom: 1px; display: none; max-height: 15px;}
 .shieldbinary p:last-child {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
@@ -274,7 +314,7 @@ h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-t
 #ha:not(:hover) > .red p,
 #an:not(:hover) > .red p {opacity: 0;-webkit-transition: opacity 0.5s ease-out; -o-transition: opacity 0.5s ease; -ms-transition: opacity 0.5s ease; transition: opacity 0.5s ease; }
 .red h3, .red p {opacity: 0; -webkit-transition: opacity 2s ease-out; -o-transition: opacity 2s ease; -ms-transition: opacity 2s ease; transition: opacity 2s ease;}
-.box .binary {font-family: 'Bitter', serif; width: 100%;}
+.box .binary {font-family: 'Bitter', serif; width: 100%; opacity: 0.6}
 .box h3 {margin-top: 15%;}
 .binary p {margin-bottom: 0 !important; width: 100%; font-size: 17px; word-break: break-all; text-align: center;}
 .binary .grad {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
