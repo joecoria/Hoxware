@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://hoxware.com/</loc>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#inicio</loc>
+    <image:image>
+      <image:loc>http://hoxware.com/logo.png</image:loc>
+      <image:caption>Hoxware logo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#info</loc>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#danos</loc>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#proteccion</loc>
+    <image:image>
+      <image:loc>http://hoxware.com/0_cer.png</image:loc>
+      <image:caption>E-commerce consultants international council</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://hoxware.com/1_cer.png</image:loc>
+      <image:caption>International Software Testing Quialifications Board</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://hoxware.com/2_cer.png</image:loc>
+      <image:caption>Cisco</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>http://hoxware.com/3_cer.png</image:loc>
+      <image:caption>ITIL</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#servicios</loc>
+  </url>
+  <url>
+    <loc>http://hoxware.com/#contacto</loc>
+  </url>
+</urlset>
