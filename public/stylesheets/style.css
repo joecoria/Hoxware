@@ -6,12 +6,12 @@ a {color: #D50D0E;}
 a:hover {text-shadow: 0 0 5px; display: block; color: #fff;}
 
 h1 {font-family: 'Bitter', serif; font-size: 42px; font-weight: 700; text-shadow: 0 0 200px; line-height: 50px; text-transform: uppercase;}
-h2 {font-size: 20px; text-transform: uppercase; color: #8E8E96}
+h2 {font-size: 20px; text-transform: uppercase; color: #fff}
 h2.contact {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700; text-transform: none; color: #fff}
 h3.contact {font-family: 'Bitter', serif; font-size: 28px; font-weight: 400; text-transform: none; color: #fff}
 h4.contact {font-family: 'Bitter', serif; font-size: 13px; font-weight: 400; text-transform: none; color: #fff}
 h3 {font-size: 16px;}
-p {font-size: 14px; color: #c7c7c7}
+p {font-size: 14px; color: #fff}
 .bitter {font-family: 'Bitter', serif !important;}
 .bitter.thin {font-weight: 400;}
 span {color: #D50D0E;}
@@ -25,13 +25,15 @@ span {color: #D50D0E;}
 
 
 /* general */
-h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #8E8E96; font-size: 22px}
+h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22px}
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
-.learnmore {cursor: pointer; padding: 8px;}
+.learnmore {cursor: pointer; padding: 8px;  -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
 .justify {text-align: justify;}
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
 .boxline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #c7c7c7 0%, #030314 100%); border-image-slice: 1;}
+.boxline h2 {color: #fff}
+.boxline h2 span {-moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
 .headcontainer {margin: 9rem auto;}
 .headalter {margin: 9rem auto 1rem;}
 

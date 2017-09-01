@@ -18,7 +18,7 @@ $.scrollify({
 			$('.userinfo').removeClass('moved');
 			$('#shieldmore').click(function() {
 				console.log('entra');
-				$('#last').toggle('fade');
+				$('#last').toggle();
 			});
 			$(document).ready(function(){
 				var numOfLines = 8;
