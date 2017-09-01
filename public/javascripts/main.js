@@ -118,17 +118,22 @@ $("input").on('focus', function(event) {
     var isValid = this.value.match(validEmail);
     if(isValid) {
       console.log('¡Está bien!');
+			$(this).siblings('label').addClass('escondido');
+			$(thisSend).prop("disabled", false);
     } else {
       console.log('¡Está mal!');
+			$(this).siblings('label').removeClass('escondido');
     }
   });
-	// validación de textarea
-	$(thisName).keyup(function () {
+	// validación de nombre
+	$(thisName).keyup(function (e) {
+    e.preventDefault();
 		var filled = $(thisName).val();
 		if (filled == "") {
 			console.log('Falta texto');
+			$(this).siblings('label').removeClass('escondido');
 		} else {
-			$(thisSend).prop("disabled", false);
+			$(this).siblings('label').addClass('escondido');
 		};
 	});
 	$(thisSend).click(function(e) {
@@ -138,7 +143,7 @@ $("input").on('focus', function(event) {
 		console.log(name);
 		console.log(email);
 		$(this).parents("form").addClass('escondido');
-	  $(this).parents("form").siblings(bro).addClass('animated bounce').removeClass('escondido');
+	  $(this).parents("form").siblings(bro).addClass('animated pulse').removeClass('escondido');
 
     $.get("/send",{name:name,email:email},function(data){
       if(data=="sent"){

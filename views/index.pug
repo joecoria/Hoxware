@@ -236,14 +236,16 @@ block content
   //- Contacto
   .container-fluid.dottedbg.panel#contact(data-section-name='contacto')
     .container.vertical-center
-      .col-md-12.text-center
-        h2.contact ¿Vas a esperar hasta perder tu información?
-        h3.contact Escríbenos:
+      .col-md-12
+        h2.text-center.contact ¿Vas a esperar hasta perder tu información?
+        h3.text-center.contact Escríbenos:
         form#contact
           .form-group
             input(type='text', class='form-control', id='name', name='name', placeholder='Nombre', autocomplete='false', required='required') 
+            label(for="name" class="bitter thin name escondido") Por favor, escribe tu nombre. 
           .form-group
             input(type='email', class='form-control', id='email', name='email', placeholder='Email', autocomplete='false', required='required') 
+            label(for="email" class="bitter thin email escondido") Ingresa un email válido.
           .form-group 
             button(disabled="disabled", id='contactus') Quiero contactarlos
         div.contact.escondido

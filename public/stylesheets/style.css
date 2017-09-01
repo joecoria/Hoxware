@@ -282,10 +282,11 @@ h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-t
 
 /* contacto */
 form, .mensaje {width: 60%; margin: 3rem auto;}
-#contact .form-group {margin-bottom: 2rem;}
+.name, .email {text-align: left !important; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E !important}
+#contact .form-group {margin-bottom: 1rem;}
 #contact .form-control {font-family: 'Bitter', serif; border-radius: 3px; padding: 1.375rem .75rem;}
 #contact button {width: 100%; background: #F61812; -moz-box-shadow: 0 0 5px #D50D0E; -webkit-box-shadow: 0 0 5px #D50D0E; box-shadow: 0 0 5px #D50D0E; border: none !important; border-radius: 3px; font-size: 18px; font-family: 'Bitter', serif; font-weight: 700; color: #030314; padding: 1.219rem .75rem; cursor: pointer;}
-#contact button.disabled {cursor: not-allowed; background: #9e302d; -moz-box-shadow: 0 0 5px #9e302d; -webkit-box-shadow: 0 0 5px #9e302d; box-shadow: 0 0 5px #9e302d;}
+#contact button:disabled {cursor: not-allowed; background: #9e302d; -moz-box-shadow: 0 0 5px #9e302d; -webkit-box-shadow: 0 0 5px #9e302d; box-shadow: 0 0 5px #9e302d;}
 ::-webkit-input-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 :-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 ::-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
