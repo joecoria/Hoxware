@@ -27,7 +27,7 @@ span {color: #D50D0E;}
 /* general */
 h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22px}
 .dottedbg {background: hsl(240, 74%, 5%); background-image: radial-gradient(hsl(0, 0%, 18%) 5%, transparent 0); background-size: 1.3em 1.3em;}
-.learnmore {cursor: pointer; padding: 8px;  -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
+.learnmore, .learnmore span {cursor: pointer; padding: 8px; color: #fff; -moz-text-shadow: 0 0 5px #fff; -webkit-text-shadow: 0 0 5px #fff; text-shadow: 0 0 5px #fff; color: #fff}
 .justify {text-align: justify;}
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
