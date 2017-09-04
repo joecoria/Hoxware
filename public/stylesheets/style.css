@@ -280,12 +280,15 @@ h1 span.glitch {color: #fff}
 /* protección */
 .shieldwrap {position: relative;}
 #shieldscene {position: absolute; height: 200px; width: 100%}
-.shieldbinary {font-family: 'Bitter', serif; position: absolute !important; width: 232px !important; padding: 10px 0 5px;}
+.shieldbinary {font-family: 'Bitter', serif; position: absolute !important; width: auto; padding: 10px 0 5px;}
 .shieldbinary:first-child {top: 13rem !important; left: -3rem !important; opacity: 0.6;}
 .shieldbinary:nth-child(2) {top: 4rem !important; left: 44rem !important; opacity: 0.4;}
 .shieldbinary:nth-child(3) {top: 21rem !important; left: 49rem !important; opacity: 0.3;}
-.shieldbinary p {font-size: 12px; margin-bottom: 1px; display: none; max-height: 15px;}
-.shieldbinary p:last-child {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
+.shieldbinary p {
+  font-size: 12px;
+  margin-bottom: 1px;
+  max-height: 15px;
+  /* display: none */}
 .shieldbinary p span {display: inline-block; color: #D50D0E; /* -webkit-text-fill-color: #D50D0E; */}
 #shield.fix {height: 100% !important}
 .icon1 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/0_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}

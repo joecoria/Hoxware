@@ -20,23 +20,38 @@ $.scrollify({
 				console.log('entra');
 				$('#last').toggle();
 			});
-			$(document).ready(function(){
-				var numOfLines = 8;
-		    var delay = 800;
-		    var fadeTime = 800;
-		    for (i = 0; i < numOfLines + 1; i++) {
-		       $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
-		    }
+			$('.bin01').typeIt({
+				strings: ['01100001 <span>01101100</span> 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '01110010 01100101 01100010 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
+				speed: 50,
+				autoStart: true
 			});
+			$('.bin02').typeIt({
+				strings: ['01100001 01101100 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '<span>01110010</span> 01100101 01100010 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
+				speed: 50,
+				autoStart: true
+			});
+			$('.bin03').typeIt({
+				strings: ['01100001 <span>01101100</span> 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '01110010 01100101 <span>01100010</span> 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
+				speed: 50,
+				autoStart: true
+			});
+			// $(document).ready(function(){
+			// 	var numOfLines = 8;
+		  //   var delay = 800;
+		  //   var fadeTime = 800;
+		  //   for (i = 0; i < numOfLines + 1; i++) {
+		  //      $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
+		  //   }
+			// });
 		} else {
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
-			var numOfLines = 8;
-			var delay = 100;
-			var fadeTime = 100;
-			for (i = 0; i < numOfLines + 1; i++) {
-				 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
-			}
+			// var numOfLines = 8;
+			// var delay = 100;
+			// var fadeTime = 100;
+			// for (i = 0; i < numOfLines + 1; i++) {
+			// 	 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
+			// }
 		}
   },
   afterRender:function() {
@@ -81,14 +96,21 @@ $('#shieldmore').click(function() {
 });
 
 // daños auto type
-var typed = new Typed('.typed', {
+$('.typed').typeIt({
 	strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.", "El daño de imagen genera desconfianza y mala reputación de tu organización.", "El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales."],
-  typeSpeed: 50,
-	backDelay: 800,
-  startDelay: 1000,
-	cursorChar: '',
+	speed: 50,
+	breakLines: false,
+	autoStart: true,
 	loop: true
 });
+// var typed = new Typed('.typed', {
+// 	strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.", "El daño de imagen genera desconfianza y mala reputación de tu organización.", "El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales."],
+//   typeSpeed: 50,
+// 	backDelay: 800,
+//   startDelay: 1000,
+// 	cursorChar: '',
+// 	loop: true
+// });
 
 // slideToggle
 // $('.box').mouseover(function() {
