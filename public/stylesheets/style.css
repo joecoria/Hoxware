@@ -38,12 +38,13 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 .headalter {margin: 9rem auto 1rem;}
 
 /* nav */
-.nav-wrapper {position: fixed; width: 100vw; z-index: 1; background: transparent;}
-.nav-wrapper .logo {width: 50px; height: 50px; position: absolute; top: 1rem; left: 1rem;}
+.nav-wrapper {position: relative; z-index: 1; background: transparent;}
+.nav-wrapper .logo {width: 50px; height: 50px; position: fixed; top: 1rem; left: 1rem;}
 .nav-wrapper .menu {position: fixed; top: 1rem; right: 1rem; max-width: 200px; z-index: 1;}
-.nav-wrapper .menu #accordion {position: fixed; top: 4rem; right: 1rem;}
-.navlinks ul {list-style: none; margin-bottom: 0; padding: 10px 0;}
-.navlinks a {color: #8E8E96;}
+.nav-wrapper .menu #accordion {position: fixed; top: 3rem; right: 0;}
+.navlinks ul {list-style: none; margin-bottom: 0; padding: 0; background: rgba(15, 15, 33, 0.87);}
+.navlinks ul li {border-bottom: 1px solid rgba(142, 142, 150, 0.41); padding: 10px;}
+.navlinks a {color: #d6d6d6;}
 .navlinks a:hover {color: #fff; text-decoration: none !important}
 .navtoggle {position: fixed; top: 1rem; right: 1rem;}
 .navtoggle span {color: #EAE7E7; display: block;}
@@ -339,19 +340,41 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 @media (max-width: 575px) {
 	.desk {display: none !important;}
 	.nodesk {display: block;}
-	form, .mensaje {width: 90%; margin: 3rem auto;}
+	form, .mensaje {width: 100%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 0px;}
+  h1 {font-size: 30px; line-height: 33px;}
+  .contactinfo p {font-size: 16px;}
+  .binary p {font-size: 12px;}
+  h3.serv {font-size: 28px;}
+  .red p {font-size: 16px; line-height: 20px;}
+  h2.services {font-size: 24px;}
+  #wp, #ip, #wsa, #pp, #ha, #an {height: 300px;}
+  .boxline {margin: 10px 0;}
+  h2 {font-size: 16px;}
+  h2 span.hilite {font-size: 19px;}
+  .nav-wrapper .menu #accordion {width: 100vw;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
 	.desk {display: none !important;}
 	.nodesk {display: block;}
-	form, .mensaje {width: 90%; margin: 3rem auto;}
+	form, .mensaje {width: 100%; margin: 3rem auto;}
 	#contact .form-group {margin-bottom: 1rem;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 0px;}
+  h1 {font-size: 30px; line-height: 33px;}
+  .contactinfo p {font-size: 16px;}
+  .binary p {font-size: 12px;}
+  h3.serv {font-size: 28px;}
+  .red p {font-size: 16px; line-height: 20px;}
+  h2.services {font-size: 24px;}
+  #wp, #ip, #wsa, #pp, #ha, #an {height: 300px;}
+  .boxline {margin: 10px 0;}
+  h2 {font-size: 16px;}
+  h2 span.hilite {font-size: 19px;}
+  .nav-wrapper .menu #accordion {width: 100vw;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -360,6 +383,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 	form, .mensaje {width: 80%; margin: 3rem auto;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 10px;}
+  .nav-wrapper .menu #accordion {width: 100vw;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

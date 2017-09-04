@@ -1,34 +1,36 @@
 extends layout
-
 block content
+  include nav
   .container-fluid.nosidepadding.dottedbg.panel#intro(data-section-name='inicio')
     .container.vertical-center
       .col-md-12.text-center
         .row.justify-content-center
-          .col-md-6.col-10#hoxware
+          .col-md-6.col-12#hoxware
             img(src='/images/logo.png', class='img-fluid')
   //- ¿Qué pasaría?
   .container-fluid.panel#introinfo(data-section-name='info')
     .container.vertical-center
       .col-md-12.text-center
-          h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <br> <span class="glitch">INFORMACIÓN</span> DE TU <br> ORGANIZACIÓN?
-          h2 <span class="hilite">Afecta tu operatividad, imagen y economía,</span> Siendo una práctica habitual malintencionada
-          .learnmore <span data-toggle="collapse" data-target="#masinfo"> SABER MÁS </span>
-          .collapse#masinfo.text-left
-            .row.justify-content-center
-              .col-md-10
-                p El robo y el secuestro de información es muy común y afecta hoy en día a muchas organizaciones.
-                p Explotando vulnerabilidades existentes:
-                .row.justify-content-center
-                  .col-sm-4.col-10
-                    .boxline
-                      p.justify Obtienen información sensible que es utilizada para lucrar de manera ilícita.
-                  .col-sm-4.col-10
-                    .boxline
-                      p.justify Secuestran datos mediante encriptación obligando a pagar para poder recuperarlos.
-                  .col-sm-4.col-10
-                    .boxline
-                      p.justify Utilizan la información para realizar sabotaje industrial.
+        .row.justify-content-center
+          .col-md-9
+            h1 ¿QUÉ PASARÍA SI ALGUIEN ROBA LA <br> <span class="glitch">INFORMACIÓN</span> DE TU ORGANIZACIÓN?
+        h2 <span class="hilite">Afecta tu operatividad, imagen y economía,</span> Siendo una práctica habitual malintencionada 
+        .learnmore <span data-toggle="collapse" data-target="#masinfo"> SABER MÁS </span>
+        .collapse#masinfo.text-left
+          .row.justify-content-center
+            .col-md-10
+              p El robo y el secuestro de información es muy común y afecta hoy en día a muchas organizaciones.
+              p Explotando vulnerabilidades existentes:
+              .row.justify-content-center
+                .col-sm-4.col-12
+                  .boxline
+                    p.justify Obtienen información sensible que es utilizada para lucrar de manera ilícita.
+                .col-sm-4.col-12
+                  .boxline
+                    p.justify Secuestran datos mediante encriptación obligando a pagar para poder recuperarlos.
+                .col-sm-4.col-12
+                  .boxline
+                    p.justify Utilizan la información para realizar sabotaje industrial.
   //- Daños    
   .container-fluid.panel#damage(data-section-name='danos')
     .container.vertical-center
@@ -55,13 +57,15 @@ block content
               p.line2 > Número de cliente: 79<span class="cursor2">_</span>
               p.line3 > Cantidad de pago: $xxx<span class="cursor3">_</span>
               p.line4 ><span class="cursor4">_</span>
-        .headcontainer
-          h1 El daño operativo puede <br>ocasionar incumplimiento<br> en compromisos<br> y servicios
-          .learnmore <span data-toggle="collapse" data-target="#masdedamage"> SABER MÁS </span>
-          .collapse#masdedamage.text-left
-            .row.justify-content-center
-              .col-md-6.boxline
-                h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
+        .row.justify-content-center
+          .col-md-7.nosidepadding
+            .headcontainer
+              h1 El daño operativo puede ocasionar incumplimiento en compromisos y servicios
+              .learnmore <span data-toggle="collapse" data-target="#masdedamage"> SABER MÁS </span>
+              .collapse#masdedamage.text-left
+                .row.justify-content-center
+                  .col-md-6.boxline
+                    h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
   //- Protección
   .container-fluid.panel#shield(data-section-name='proteccion')
     .container.vertical-center
@@ -89,35 +93,37 @@ block content
               p.justify.dtext6 01110010 01100101 <span>01100010</span> 01100101 
               p.justify.dtext7 01101100 01101111 01101110 01100111 
               p.justify.dtext8 01110100 01101111 01110101 01110011 
-        .headcontainer
-          h1 <span>Hoxware</span> brinda<br> protección a tus recursos,<br> identificando y eliminando<br>amenazas
-          .learnmore <span data-toggle="collapse" data-target="#masproteccion" id="shieldmore"> SABER MÁS </span>
-          .collapse#masproteccion
-            .container
-              .row.justify-content-center
-                .col-md-8
-                  h2 Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
-                  .row
-                    .col-md-6.text-center
-                      .icon1
-                      h3.bitter.thin Ethical Hacking Certification | EC-Council
-                    .col-md-6.text-center
-                      .icon1
-                      h3.bitter.thin Computer Hacking Forensic Investigator Certification | EC-Council
-                  .row
-                    .col-md-6.text-center
-                      .icon2
-                      h3.bitter.thin CCNP Routing & Switching
-                    .col-md-6.text-center
-                      .icon3
-                      h3.bitter.thin CCNA Routing & Switching
-                  .row
-                    .col-md-6.text-center
-                      .icon4
-                      h3.bitter.thin CTFL | ISTQB
-                    .col-md-6.text-center
-                      .icon4
-                      h3.bitter.thin ITIL V3 Foundation
+        .row.justify-content-center
+          .col-md-8
+            .headcontainer
+              h1 <span>Hoxware</span> brinda protección a tus recursos, identificando y eliminando amenazas
+              .learnmore <span data-toggle="collapse" data-target="#masproteccion" id="shieldmore"> SABER MÁS </span>
+              .collapse#masproteccion
+                .container
+                  .row.justify-content-center
+                    .col-md-8
+                      h2 Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
+                      .row
+                        .col-md-6.text-center
+                          .icon1
+                          h3.bitter.thin Ethical Hacking Certification | EC-Council
+                        .col-md-6.text-center
+                          .icon1
+                          h3.bitter.thin Computer Hacking Forensic Investigator Certification | EC-Council
+                      .row
+                        .col-md-6.text-center
+                          .icon2
+                          h3.bitter.thin CCNP Routing & Switching
+                        .col-md-6.text-center
+                          .icon3
+                          h3.bitter.thin CCNA Routing & Switching
+                      .row
+                        .col-md-6.text-center
+                          .icon4
+                          h3.bitter.thin CTFL | ISTQB
+                        .col-md-6.text-center
+                          .icon4
+                          h3.bitter.thin ITIL V3 Foundation
   //- Servicios
   .container-fluid.panel#services(data-section-name='servicios')
     .container.padding-vertical
