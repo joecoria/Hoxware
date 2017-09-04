@@ -80,6 +80,16 @@ $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
 
+// daños auto type
+var typed = new Typed('.typed', {
+	strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.", "El daño de imagen genera desconfianza y mala reputación de tu organización.", "El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales."],
+  typeSpeed: 50,
+	backDelay: 800,
+  startDelay: 1000,
+	cursorChar: '',
+	loop: true
+});
+
 // slideToggle
 // $('.box').mouseover(function() {
 // 	$divid = $(this).parents('div');

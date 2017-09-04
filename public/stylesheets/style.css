@@ -185,7 +185,7 @@ h1 span.glitch {color: #fff}
 .userinfo:nth-child(3) {filter: blur(1px); top: 25rem !important; left: 8rem !important; opacity: 0;}
 .moved.userinfo:nth-child(3) {transition: all 2s ease-out; top: 16rem !important; opacity: 0.6;}
 .userinfo:nth-child(4) {top: 25rem !important; left: 50rem !important; opacity: 0;}
-.moved.userinfo:nth-child(4) {transition: all 2s ease-out; top: 13rem !important; opacity: 1;}
+.moved.userinfo:nth-child(4) {transition: all 2s ease-out; top: 13rem !important; opacity: 0.6;}
 .userinfo p {position: relative; margin-bottom: 4px; left: 50%; margin-left: -8.5em; text-align: left; font-size: 1em; font-family: monospace; white-space: nowrap; overflow: hidden; width: 0; color: #fff;}
 .userinfo p span {color: #fff; font-weight: bold;}
 .userinfo p.line1.animate {
