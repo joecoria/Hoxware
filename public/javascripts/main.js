@@ -10,6 +10,15 @@ $.scrollify({
     $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
 		$.scrollify.update();
 		if($.scrollify.current().attr('data-section-name') === 'danos'){
+			$('.typed').typeIt({
+				strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",
+				"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.", 
+				"El daño de imagen genera desconfianza y mala reputación de tu organización."],
+				speed: 50,
+				breakLines: false,
+				autoStart: true,
+				loop: false
+			});
 			console.log('daños');
 			$('.userinfo').addClass('moved');
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').addClass('animate');
@@ -94,23 +103,6 @@ $(document).ready(function() {
 $('#shieldmore').click(function() {
 	$('#shield').toggleClass('fix');
 });
-
-// daños auto type
-$('.typed').typeIt({
-	strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.", "El daño de imagen genera desconfianza y mala reputación de tu organización.", "El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales."],
-	speed: 50,
-	breakLines: false,
-	autoStart: true,
-	loop: true
-});
-// var typed = new Typed('.typed', {
-// 	strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.", "El daño de imagen genera desconfianza y mala reputación de tu organización.", "El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales."],
-//   typeSpeed: 50,
-// 	backDelay: 800,
-//   startDelay: 1000,
-// 	cursorChar: '',
-// 	loop: true
-// });
 
 // slideToggle
 // $('.box').mouseover(function() {

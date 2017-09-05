@@ -46,17 +46,61 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   -webkit-transform: rotate(-45deg);
   font-size: 6px;
   color: #222;
-	animation-duration: 6s;
+	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 .item-1{
 	animation-name: anim-1;
 }
+.item-2 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  background: -webkit-linear-gradient(left, transparent, #D50D0E, transparent);
+  text-align: center;
+  width: 60%;
+  -webkit-transform: rotate(-45deg);
+  font-size: 6px;
+  color: #222;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.item-2{
+	animation-name: anim-2;
+}
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  background: -webkit-linear-gradient(left, transparent, #D50D0E, transparent);
+  text-align: center;
+  width: 60%;
+  -webkit-transform: rotate(-45deg);
+  font-size: 6px;
+  color: #222;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.item-3{
+	animation-name: anim-3;
+}
 @keyframes anim-1 {
-	0% { right: -32%; top: 0vh; opacity: 0; }
-  50% { right: 30vw; top: 90vh; opacity: 1; }
-  100% { right: 50vw; top: 130vh; opacity: 0; }
+	0% { right: -32%; top: 0vh; opacity: 0;}
+  50% { right: 30vw; top: 80vh; opacity: 1;}
+  100% { right: 80vw; top: 140vh; opacity: 0;}
+}
+@keyframes anim-2 {
+	0% { right: -60vw; top: 110vh; opacity: 0;}
+  50% { right: 0vw; top: 190vh; opacity: 1;}
+  100% { right: 40vw; top: 250vh; opacity: 0;}
+}
+@keyframes anim-3 {
+	0% { right: -60vw; top: 250vh; opacity: 0;}
+  50% { right: 0vw; top: 340vh; opacity: 1;}
+  100% { right: 40vw; top: 400vh; opacity: 0;}
 }
 
 /* nav */

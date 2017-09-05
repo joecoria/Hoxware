@@ -2,7 +2,10 @@ extends layout
 block content
   include nav
   .container-fluid.nosidepadding.dottedbg.panel#intro(data-section-name='inicio')
-    p.item-1 This is your last chance. After this, there is no turning back
+    p.item-1.desk This is your last chance. After this, there is no turning back
+    p.item-2.desk This is your last chance. After this, there is no turning back
+    p.item-3.desk This is your last chance. After this, there is no turning back
+    
     .container.vertical-center
       .col-md-12.text-center
         .row.justify-content-center
@@ -227,6 +230,7 @@ block content
   
   //- Contacto
   .container-fluid.dottedbg.panel#contact(data-section-name='contacto')
+    p.item-1.desk This is your last chance. After this, there is no turning back
     .container.vertical-center
       .col-md-12
         h2.text-center.contact ¿Vas a esperar hasta perder tu información?
@@ -245,7 +249,7 @@ block content
             .col-sm-8.mensaje
               p ¡Ya se envió tu mensaje!
               p Muy pronto nos comunicaremos contigo.
-    .container-fluid.dottedbg
+    .container-fluid
       .container.padding-vertical
         .row.justify-content-center
           .col-sm-8
@@ -264,3 +268,4 @@ block content
                 p 55-23-24-12
                 h4.contact E-mail:
                 p contacto@hoxware.com
+        .clearfix
