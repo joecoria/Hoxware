@@ -11,6 +11,7 @@ h2.contact {font-family: 'Bitter', serif; font-size: 32px; font-weight: 700; tex
 h3.contact {font-family: 'Bitter', serif; font-size: 28px; font-weight: 400; text-transform: none; color: #fff}
 h4.contact {font-family: 'Bitter', serif; font-size: 13px; font-weight: 400; text-transform: none; color: #fff}
 h3 {font-size: 16px;}
+.gray {color: #c7c7c7}
 p {font-size: 14px; color: #fff}
 .bitter {font-family: 'Bitter', serif !important;}
 .bitter.thin {font-weight: 400;}
@@ -31,9 +32,9 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 .justify {text-align: justify;}
 .justify:after {content: ""; display: inline-block; width: 100%;}
 .escondido {display: none;}
-.boxline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #c7c7c7 0%, #030314 100%); border-image-slice: 1;}
+.boxline {border: 5px solid; padding: 30px 20px 0; margin: 0 15px; -moz-border-image: -moz-linear-gradient(top, #c7c7c7 0%, #030314 100%); -webkit-border-image: -webkit-linear-gradient(top, #c7c7c7 0%, #030314 100%); border-image: linear-gradient(to bottom, #d6d6d6 0%, #030314 100%); border-image-slice: 1;}
 .boxline h2 {color: #fff}
-.boxline h2 span {-moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
+.boxline h2 span {-moz-text-shadow: 0 0 2px #ff1112; -webkit-text-shadow: 0 0 2px #ff1112; text-shadow: 0 0 2px #ff1112; color: #ff1112}
 .headcontainer {margin: 9rem auto;}
 .headalter {margin: 9rem auto 1rem;}
 .item-1 {
@@ -94,19 +95,19 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-name: anim-3;
 }
 @keyframes anim-1 {
-	0% { right: -50vw; top: 40vh; opacity: 0;}
-  50% { right: 0vw; top: 110vh; opacity: 1;}
-  100% { right: 45vw; top: 170vh; opacity: 0;}
+	0% { right: -10vw; top: 40vh; opacity: 0;}
+  50% { right: 40vw; top: 110vh; opacity: 1;}
+  100% { right: 85vw; top: 170vh; opacity: 0;}
 }
 @keyframes anim-2 {
-	0% { right: -60vw; top: 110vh; opacity: 0;}
-  50% { right: 0vw; top: 190vh; opacity: 1;}
-  100% { right: 40vw; top: 250vh; opacity: 0;}
+	0% { right: -20vw; top: 110vh; opacity: 0;}
+  50% { right: 40vw; top: 190vh; opacity: 1;}
+  100% { right: 80vw; top: 250vh; opacity: 0;}
 }
 @keyframes anim-3 {
-	0% { right: -60vw; top: 250vh; opacity: 0;}
-  50% { right: 0vw; top: 340vh; opacity: 1;}
-  100% { right: 40vw; top: 400vh; opacity: 0;}
+	0% { right: -20vw; top: 250vh; opacity: 0;}
+  50% { right: 40vw; top: 340vh; opacity: 1;}
+  100% { right: 80vw; top: 400vh; opacity: 0;}
 }
 
 /* nav */
@@ -249,16 +250,17 @@ h1 span.glitch {color: #fff}
 /* daños */
 .userwrap {position: relative;}
 #scene {position: absolute; height: 200px; width: 100%}
-.userinfo {position: absolute !important; background: rgba(3, 3, 20, .7); width: 260px !important; border: 2px solid rgba(255, 255, 255, 0.72); padding: 10px 0 5px;}
-.userinfo:first-child {filter: blur(1px); top: 25rem !important; left: 2rem !important; opacity: 0;}
-.moved.userinfo:first-child {transition: all 1s ease-out; top: 5rem !important; opacity: 0.2;}
-.userinfo:nth-child(2) {filter: blur(1px); top: 25rem !important; left: 45rem !important; opacity: 0;}
-.moved.userinfo:nth-child(2) {transition: all 1s ease-out; top: 1rem !important; opacity: 0.4;}
+.userinfo {position: absolute !important; background: rgba(3, 3, 20, .7); width: 260px !important; border: 2px solid rgba(255, 255, 255, 0.52); padding: 10px 0 5px;}
+.userinfo:first-child {filter: blur(2px); top: 25rem !important; left: 2rem !important; opacity: 0;}
+.moved.userinfo:first-child {transition: all 1s ease-out; top: 5rem !important; opacity: 0.3;}
+.userinfo:nth-child(2) {filter: blur(2px); top: 25rem !important; left: 45rem !important; opacity: 0;}
+.moved.userinfo:nth-child(2) {transition: all 1s ease-out; top: 1rem !important; opacity: 0.5;}
 .userinfo:nth-child(3) {filter: blur(1px); top: 25rem !important; left: 8rem !important; opacity: 0;}
-.moved.userinfo:nth-child(3) {transition: all 2s ease-out; top: 16rem !important; opacity: 0.6;}
-.userinfo:nth-child(4) {top: 25rem !important; left: 50rem !important; opacity: 0;}
-.moved.userinfo:nth-child(4) {transition: all 2s ease-out; top: 13rem !important; opacity: 0.6;}
-.userinfo p {position: relative; margin-bottom: 4px; left: 50%; margin-left: -8.5em; text-align: left; font-size: 1em; font-family: monospace; white-space: nowrap; overflow: hidden; width: 0; color: #fff;}
+.moved.userinfo:nth-child(3) {transition: all 2s ease-out; top: 16rem !important; opacity: 0.3;}
+.userinfo:nth-child(4) {filter: blur(1px); top: 25rem !important; left: 50rem !important; opacity: 0;}
+.moved.userinfo:nth-child(4) {transition: all 2s ease-out; top: 13rem !important; opacity: 0.4;}
+.extraopacity {opacity: 0.1 !important;}
+.userinfo p {position: relative; margin-bottom: 4px; left: 50%; margin-left: -8.5em; text-align: left; font-size: 1em; font-family: monospace; white-space: nowrap; overflow: hidden; width: 0; color: rgba(255, 255, 255, 0.72);}
 .userinfo p span {color: #fff; font-weight: bold;}
 .userinfo p.line1.animate {-webkit-animation: type .9s 1s steps(20, end) forwards; -moz-animation: type .9s 1s steps(20, end) forwards; -o-animation: type .9s 1s steps(20, end) forwards; animation: type .9s 1s steps(20, end) forwards;}
 .userinfo p span.cursor1.animate {-webkit-animation: blink 1s 2s 2 forwards; -moz-animation: blink 1s 2s 2 forwards; -o-animation: blink 1s 2s 2 forwards; animation: blink 1s 2s 2 forwards;}
@@ -313,9 +315,9 @@ h1 span.glitch {color: #fff}
 .shieldwrap {position: relative;}
 #shieldscene {position: absolute; height: 200px; width: 100%}
 .shieldbinary {font-family: 'Bitter', serif; position: absolute !important; width: auto; padding: 10px 0 5px;}
-.shieldbinary:first-child {top: 13rem !important; left: -3rem !important; opacity: 0.6;}
-.shieldbinary:nth-child(2) {top: 4rem !important; left: 44rem !important; opacity: 0.4;}
-.shieldbinary:nth-child(3) {top: 21rem !important; left: 49rem !important; opacity: 0.3;}
+.shieldbinary:first-child {filter: blur(1px); top: 13rem !important; left: -3rem !important; opacity: 0.5;}
+.shieldbinary:nth-child(2) {filter: blur(1px); top: 4rem !important; left: 44rem !important; opacity: 0.3;}
+.shieldbinary:nth-child(3) {filter: blur(1px); top: 21rem !important; left: 49rem !important; opacity: 0.2;}
 .shieldbinary p {font-size: 12px; margin-bottom: 1px; max-height: 15px; /* display: none */}
 .shieldbinary p span {display: inline-block; color: #D50D0E; /* -webkit-text-fill-color: #D50D0E; */}
 #shield.fix {height: 100% !important}
@@ -348,10 +350,10 @@ h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-t
 #ha:not(:hover) > .red p,
 #an:not(:hover) > .red p {opacity: 0;-webkit-transition: opacity 0.5s ease-out; -o-transition: opacity 0.5s ease; -ms-transition: opacity 0.5s ease; transition: opacity 0.5s ease; }
 .red h3, .red p {opacity: 0; -webkit-transition: opacity 2s ease-out; -o-transition: opacity 2s ease; -ms-transition: opacity 2s ease; transition: opacity 2s ease;}
-.box .binary {font-family: 'Bitter', serif; width: 100%; opacity: 0.4}
+.box .binary {filter: blur(1px); font-family: 'Bitter', serif; width: 100%; opacity: 0.2}
 .box h3 {margin-top: 15%;}
 .binary p {margin-bottom: 0 !important; width: 100%; font-size: 17px; word-break: break-all; text-align: center;}
-.binary .grad {background: -webkit-linear-gradient(#eee, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
+.binary .grad {background: -webkit-linear-gradient(#ccc, #030314); -webkit-background-clip: text; -webkit-text-fill-color: transparent}
 .red p {font-size: 18px; margin-top: 15px; line-height: 24px; color: #fff;}
 
 /* contacto */

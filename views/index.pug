@@ -27,35 +27,35 @@ block content
               .row.justify-content-center
                 .col-sm-4.col-12
                   .boxline
-                    p.justify Obtienen información sensible que es utilizada para lucrar de manera ilícita.
+                    p.text-center Obtienen información sensible que es utilizada para lucrar de manera ilícita.
                 .col-sm-4.col-12
                   .boxline
-                    p.justify Secuestran datos mediante encriptación obligando a pagar para poder recuperarlos.
+                    p.text-center Secuestran datos mediante encriptación obligando a pagar para poder recuperarlos.
                 .col-sm-4.col-12
                   .boxline
-                    p.justify Utilizan la información para realizar sabotaje industrial.
+                    p.text-center Utilizan la información para realizar sabotaje industrial.
   //- Daños    
   .container-fluid.panel#damage(data-section-name='danos')
     .container.vertical-center
       .col-md-12.text-center
         .userwrap.desk
           #scene(data-relative-input="true", data-hover-only="true", data-calibrate-x="false", data-calibrate-y="true", data-invert-x="false", data-invert-y="false", data-limit-x="false", data-limit-y="false", data-scalar-x="2", data-scalar-y="8", data-friction-x="0.4", data-friction-y="0.8", data-origin-x="0.0", data-origin-y="0.0", data-precision="1", data-pointer-events="false")
-            .userinfo.layer(data-depth="0.25")
+            .userinfo.uno.layer(data-depth="0.25")
               p.line1 > Usuario: Ramón<span class="cursor1">_</span>
               p.line2 > Número de cliente: 43<span class="cursor2">_</span>
               p.line3 > Cantidad de pago: $xxx<span class="cursor3">_</span>
               p.line4 ><span class="cursor4">_</span>
-            .userinfo.layer(data-depth="0.50")
+            .userinfo.dos.layer(data-depth="0.50")
               p.line1 > Usuario: Patricia<span class="cursor1">_</span>
               p.line2 > Número de cliente: 17<span class="cursor2">_</span>
               p.line3 > Cantidad de pago: $xxx<span class="cursor3">_</span>
               p.line4 ><span class="cursor4">_</span>
-            .userinfo.layer(data-depth="0.75")
+            .userinfo.tres.layer(data-depth="0.75")
               p.line1 > Usuario: María<span class="cursor1">_</span>
               p.line2 > Número de cliente: 51<span class="cursor2">_</span>
               p.line3 > Cantidad de pago: $xxx<span class="cursor3">_</span>
               p.line4 ><span class="cursor4">_</span>
-            .userinfo.layer(data-depth="1.0")
+            .userinfo.cuatro.layer(data-depth="1.0")
               p.line1 > Usuario: Diego<span class="cursor1">_</span>
               p.line2 > Número de cliente: 79<span class="cursor2">_</span>
               p.line3 > Cantidad de pago: $xxx<span class="cursor3">_</span>
@@ -64,10 +64,10 @@ block content
           .col-md-9.nosidepadding
             .headcontainer
               h1.typed
-              .learnmore <span data-toggle="collapse" data-target="#masdedamage"> SABER MÁS </span>
+              .learnmore <span data-toggle="collapse" data-target="#masdedamage" id="damagemore"> SABER MÁS </span>
               .collapse#masdedamage.text-left
                 .row.justify-content-center
-                  .col-md-6.boxline
+                  .col-md-8.boxline
                     h2.justify Actualmente existen regulaciones como la <span>ley de protección de datos personales en posesión de los particulares</span>, en donde no contar con los esquemas de ciberseguridad correctos puede conllevar al incumplimiento de la misma haciendo acreedora a la organización a sanciones monetarias.
   //- Protección
   .container-fluid.panel#shield(data-section-name='proteccion')
@@ -89,29 +89,29 @@ block content
               .collapse#masproteccion
                 .container
                   .row.justify-content-center
-                    .col-md-8
+                    .col-md-12
                       h2 Nuestro equipo especializado y certificado en ciberseguridad se enfoca en colaborar con las organizaciones, empresas o negocios para prevenir actividades maliciosas.
                       .row
                         .col-md-6.text-center
                           .icon1
-                          h3.bitter.thin Ethical Hacking Certification | EC-Council
+                          h3.bitter.thin.gray Ethical Hacking Certification | EC-Council
                         .col-md-6.text-center
                           .icon1
-                          h3.bitter.thin Computer Hacking Forensic Investigator Certification | EC-Council
+                          h3.bitter.thin.gray Computer Hacking Forensic Investigator Certification | EC-Council
+                      .row
+                        .col-md-6.text-center
+                          .icon3
+                          h3.bitter.thin.gray CCNP Routing & Switching
+                        .col-md-6.text-center
+                          .icon3
+                          h3.bitter.thin.gray CCNA Routing & Switching
                       .row
                         .col-md-6.text-center
                           .icon2
-                          h3.bitter.thin CCNP Routing & Switching
-                        .col-md-6.text-center
-                          .icon3
-                          h3.bitter.thin CCNA Routing & Switching
-                      .row
+                          h3.bitter.thin.gray CTFL | ISTQB
                         .col-md-6.text-center
                           .icon4
-                          h3.bitter.thin CTFL | ISTQB
-                        .col-md-6.text-center
-                          .icon4
-                          h3.bitter.thin ITIL V3 Foundation
+                          h3.bitter.thin.gray ITIL V3 Foundation
   //- Servicios
   .container-fluid.panel#services(data-section-name='servicios')
     .container.padding-vertical
@@ -236,10 +236,10 @@ block content
         h3.text-center.contact Escríbenos:
         form#contact
           .form-group
-            input(type='text', class='form-control', id='name', name='name', placeholder='Nombre', autocomplete='false', required='required') 
+            input(type='text', class='form-control', id='name', name='name', placeholder='Nombre', autocomplete='off', required='required') 
             label(for="name" class="bitter thin name escondido") Por favor, escribe tu nombre. 
           .form-group
-            input(type='email', class='form-control', id='email', name='email', placeholder='Email', autocomplete='false', required='required') 
+            input(type='email', class='form-control', id='email', name='email', placeholder='Email', autocomplete='off', required='required') 
             label(for="email" class="bitter thin email escondido") Ingresa un email válido.
           .form-group 
             button(disabled="disabled", id='contactus') Quiero contactarlos

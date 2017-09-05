@@ -12,55 +12,48 @@ $.scrollify({
 		if($.scrollify.current().attr('data-section-name') === 'danos'){
 			$('.typed').typeIt({
 				strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",
-				"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.", 
+				"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.",
 				"El daño de imagen genera desconfianza y mala reputación de tu organización."],
-				speed: 50,
+				speed: 80,
 				breakLines: false,
+				loopDelay: 3500,
+				deleteDelay: 3500,
 				autoStart: true,
 				loop: false
 			});
-			console.log('daños');
 			$('.userinfo').addClass('moved');
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').addClass('animate');
+			$('#damagemore').click(function() {
+				$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').toggleClass('animate');
+				$('.userinfo').toggleClass('moved');
+			});
 		} else if($.scrollify.current().attr('data-section-name') === 'proteccion'){
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
 			$('#shieldmore').click(function() {
-				console.log('entra');
 				$('#last').toggle();
 			});
 			$('.bin01').typeIt({
 				strings: ['01100001 <span>01101100</span> 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '01110010 01100101 01100010 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
 				speed: 50,
+				startDelay: 500,
 				autoStart: true
 			});
 			$('.bin02').typeIt({
 				strings: ['01100001 01101100 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '<span>01110010</span> 01100101 01100010 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
 				speed: 50,
+				startDelay: 3000,
 				autoStart: true
 			});
 			$('.bin03').typeIt({
 				strings: ['01100001 <span>01101100</span> 01101100 01111001', '01101111 01110101 01110010 01100010', '01100001 01110011 01100101 01100001', '01110010 01100101 <span>01100010</span> 01100101', '01101100 01101111 01101110 01100111', '01110100 01101111 01110101 01110011'],
 				speed: 50,
+				startDelay: 6000,
 				autoStart: true
 			});
-			// $(document).ready(function(){
-			// 	var numOfLines = 8;
-		  //   var delay = 800;
-		  //   var fadeTime = 800;
-		  //   for (i = 0; i < numOfLines + 1; i++) {
-		  //      $('.dtext' + i).delay(delay * i).fadeIn(fadeTime);
-		  //   }
-			// });
 		} else {
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
-			// var numOfLines = 8;
-			// var delay = 100;
-			// var fadeTime = 100;
-			// for (i = 0; i < numOfLines + 1; i++) {
-			// 	 $('.dtext' + i).delay(delay * i).fadeOut(fadeTime);
-			// }
 		}
   },
   afterRender:function() {
