@@ -44,7 +44,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   text-align: center;
   width: 60%;
   -webkit-transform: rotate(-45deg);
-  font-size: 6px;
+  font-size: 10px;
+  line-height: 8px;
   color: #222;
 	animation-duration: 3s;
 	animation-timing-function: linear;
@@ -61,7 +62,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   text-align: center;
   width: 60%;
   -webkit-transform: rotate(-45deg);
-  font-size: 6px;
+  font-size: 10px;
+  line-height: 8px;
   color: #222;
 	animation-duration: 3s;
 	animation-timing-function: linear;
@@ -78,7 +80,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   text-align: center;
   width: 60%;
   -webkit-transform: rotate(-45deg);
-  font-size: 6px;
+  font-size: 10px;
+  line-height: 8px;
   color: #222;
 	animation-duration: 3s;
 	animation-timing-function: linear;
