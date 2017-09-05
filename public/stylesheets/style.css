@@ -50,6 +50,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	overflow: hidden;
 }
 .item-1{
 	animation-name: anim-1;
@@ -68,6 +69,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	overflow: hidden;
 }
 .item-2{
 	animation-name: anim-2;
@@ -86,14 +88,15 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	overflow: hidden;
 }
 .item-3{
 	animation-name: anim-3;
 }
 @keyframes anim-1 {
-	0% { right: -32%; top: 0vh; opacity: 0;}
-  50% { right: 30vw; top: 80vh; opacity: 1;}
-  100% { right: 80vw; top: 140vh; opacity: 0;}
+	0% { right: -50vw; top: 40vh; opacity: 0;}
+  50% { right: 0vw; top: 110vh; opacity: 1;}
+  100% { right: 45vw; top: 170vh; opacity: 0;}
 }
 @keyframes anim-2 {
 	0% { right: -60vw; top: 110vh; opacity: 0;}
