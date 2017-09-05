@@ -19,7 +19,7 @@ $.scrollify({
 				loopDelay: 3500,
 				deleteDelay: 3500,
 				autoStart: true,
-				loop: false
+				loop: true
 			});
 			$('.userinfo').addClass('moved');
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').addClass('animate');
@@ -28,6 +28,7 @@ $.scrollify({
 				$('.userinfo').toggleClass('moved');
 			});
 		} else if($.scrollify.current().attr('data-section-name') === 'proteccion'){
+			$('#masdedamage.show').removeClass('show');
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
 			$('#shieldmore').click(function() {
@@ -51,7 +52,11 @@ $.scrollify({
 				startDelay: 6000,
 				autoStart: true
 			});
+		} else if($.scrollify.current().attr('data-section-name') === 'contacto'){
+			$('#masproteccion.show').removeClass('show');
 		} else {
+			$('#masinfo.show').removeClass('show');
+			$('#masdedamage.show').removeClass('show');
 			$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').removeClass('animate');
 			$('.userinfo').removeClass('moved');
 		}

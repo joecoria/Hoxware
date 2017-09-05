@@ -47,7 +47,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   -webkit-transform: rotate(-45deg);
   font-size: 10px;
   line-height: 8px;
-  color: #222;
+  color: #030314;
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -66,7 +66,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   -webkit-transform: rotate(-45deg);
   font-size: 10px;
   line-height: 8px;
-  color: #222;
+  color: #030314;
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -85,7 +85,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   -webkit-transform: rotate(-45deg);
   font-size: 10px;
   line-height: 8px;
-  color: #222;
+  color: #030314;
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -318,8 +318,8 @@ h1 span.glitch {color: #fff}
 .shieldbinary:first-child {filter: blur(1px); top: 13rem !important; left: -3rem !important; opacity: 0.5;}
 .shieldbinary:nth-child(2) {filter: blur(1px); top: 4rem !important; left: 44rem !important; opacity: 0.3;}
 .shieldbinary:nth-child(3) {filter: blur(1px); top: 21rem !important; left: 49rem !important; opacity: 0.2;}
-.shieldbinary p {font-size: 12px; margin-bottom: 1px; max-height: 15px; /* display: none */}
-.shieldbinary p span {display: inline-block; color: #D50D0E; /* -webkit-text-fill-color: #D50D0E; */}
+.shieldbinary p {font-size: 12px; margin-bottom: 1px; max-height: 15px;}
+.shieldbinary p span {display: inline-block; color: #D50D0E;}
 #shield.fix {height: 100% !important}
 .icon1 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/0_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
 .icon2 {width: 165px; height: 165px; border-radius: 50%; background: url('/images/1_cer.png') center no-repeat; background-size: cover; display: block; margin: 2rem auto 1rem;}
