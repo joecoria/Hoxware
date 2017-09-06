@@ -388,6 +388,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
   h2 {font-size: 16px;}
   h2 span.hilite {font-size: 19px;}
   .nav-wrapper .menu #accordion {width: 100vw;}
+	.nav-wrapper .logo {width: 30px; height: 30px; position: fixed; top: 1rem; left: 1rem;}
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -408,6 +409,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
   h2 {font-size: 16px;}
   h2 span.hilite {font-size: 19px;}
   .nav-wrapper .menu #accordion {width: 100vw;}
+	.nav-wrapper .logo {width: 30px; height: 30px; position: fixed; top: 1rem; left: 1rem;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -417,6 +419,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 10px;}
   .nav-wrapper .menu #accordion {width: 100vw;}
+	.nav-wrapper .logo {width: 40px; height: 40px; position: fixed; top: 1rem; left: 1rem;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
