@@ -27,18 +27,17 @@ $.scrollify({
 				$('.userinfo:nth-child(2)').addClass('moved');
 				$('.userinfo:nth-child(2) p.line1, .userinfo:nth-child(2) p span.cursor1, .userinfo:nth-child(2) p.line2, .userinfo:nth-child(2) p span.cursor2, .userinfo:nth-child(2) p.line3, .userinfo:nth-child(2) p span.cursor3, .userinfo:nth-child(2) p.line4, .userinfo:nth-child(2) p span.cursor4').addClass('animate');
 			}
-			setTimeout(sube2, 900);
+			setTimeout(sube2, 3000);
 			function sube3(){
 				$('.userinfo:nth-child(3)').addClass('moved');
-				$('.userinfo:nth-child(3) p.line1, .userinfo:nth-child(3) p span.cursor1, .userinfo:nth-child(3) p.line3, .userinfo:nth-child(3) p span.cursor3, .userinfo:nth-child(3) p.line3, .userinfo:nth-child(3) p span.cursor3, .userinfo:nth-child(3) p.line4, .userinfo:nth-child(3) p span.cursor4').addClass('animate');
+				$('.userinfo:nth-child(3) p.line1, .userinfo:nth-child(3) p span.cursor1, .userinfo:nth-child(3) p.line2, .userinfo:nth-child(3) p span.cursor2, .userinfo:nth-child(3) p.line3, .userinfo:nth-child(3) p span.cursor3, .userinfo:nth-child(3) p.line4, .userinfo:nth-child(3) p span.cursor4').addClass('animate');
 			}
-			setTimeout(sube3, 1800);
+			setTimeout(sube3, 6000);
 			function sube4(){
-				$('.userinfo:last-child').addClass('moved');
-				$('.userinfo:last-child p.line1, .userinfo:last-child p span.cursor1, .userinfo:last-child .userinfo:last-child .userinfo:last-child p.line3, .userinfo:last-child p span.cursor3, .userinfo:last-child p.line4, .userinfo:last-child p span.cursor4').addClass('animate');
+				$('.userinfo:nth-child(4)').addClass('moved');
+				$('.userinfo:nth-child(4) p.line1, .userinfo:nth-child(4) p span.cursor1, .userinfo:nth-child(4) p.line2, .userinfo:nth-child(4) p span.cursor2, .userinfo:nth-child(4) p.line3, .userinfo:nth-child(4) p span.cursor3, .userinfo:nth-child(4) p.line4, .userinfo:nth-child(4) p span.cursor4').addClass('animate');
 			}
-			setTimeout(sube4, 2700);
-			
+			setTimeout(sube4, 9000);
 			$('#damagemore').click(function() {
 				$('.userinfo p.line1, .userinfo p span.cursor1, .userinfo p.line2, .userinfo p span.cursor2, .userinfo p.line3, .userinfo p span.cursor3, .userinfo p.line4, .userinfo p span.cursor4').toggleClass('animate');
 				$('.userinfo').toggleClass('moved');
