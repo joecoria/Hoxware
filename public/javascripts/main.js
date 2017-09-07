@@ -1,5 +1,5 @@
 // Scrollify!
-if ($(window).width() < 993) {
+if ($(window).width() < 769) {
 	// console.log('chico..?');
 	$('.typed').typeIt({
 		strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",

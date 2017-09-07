@@ -117,7 +117,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 .nav-wrapper .menu #accordion {position: fixed; top: 3rem; right: 0;}
 .navlinks ul {list-style: none; margin-bottom: 0; padding: 0; background: rgba(142, 142, 150, 0.41);}
 .navlinks ul li {border-bottom: 1px solid rgba(15, 15, 33, 0.87); padding: 10px;}
-.navlinks a {color: #fff;}
+.navlinks a {color: #fff; -moz-text-shadow: 0 0 2px #fff; -webkit-text-shadow: 0 0 2px #fff; text-shadow: 0 0 2px #fff;}
 .navlinks a:hover {color: #d6d6d6; text-decoration: none !important}
 .navtoggle {position: fixed; top: 1rem; right: 1rem;}
 .navtoggle span {color: #EAE7E7; display: block;}
@@ -413,8 +413,7 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.desk {display: none !important;}
-	.nodesk {display: block;}
+	.nodesk {display: none;}
 	form, .mensaje {width: 80%; margin: 3rem auto;}
 	span.icon-bar {width: 28px; height: 4px; margin: 5px auto;}
 	#cd-vertical-nav {right: 10px;}
