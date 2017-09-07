@@ -115,8 +115,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 .nav-wrapper .logo {width: 50px; height: 50px; position: fixed; top: 1rem; left: 1rem;}
 .nav-wrapper .menu {position: fixed; top: 1rem; right: 1rem; max-width: 200px; z-index: 1;}
 .nav-wrapper .menu #accordion {position: fixed; top: 3rem; right: 0;}
-.navlinks ul {list-style: none; margin-bottom: 0; padding: 0; background: rgba(15, 15, 33, 0.87);}
-.navlinks ul li {border-bottom: 1px solid rgba(142, 142, 150, 0.41); padding: 10px;}
+.navlinks ul {list-style: none; margin-bottom: 0; padding: 0; background: rgba(142, 142, 150, 0.41);}
+.navlinks ul li {border-bottom: 1px solid rgba(15, 15, 33, 0.87); padding: 10px;}
 .navlinks a {color: #d6d6d6;}
 .navlinks a:hover {color: #fff; text-decoration: none !important}
 .navtoggle {position: fixed; top: 1rem; right: 1rem;}

@@ -1,6 +1,17 @@
 // Scrollify!
 if ($(window).width() < 993) {
 	// console.log('chico..?');
+	$('.typed').typeIt({
+		strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",
+		"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.",
+		"El daño de imagen genera desconfianza y mala reputación de tu organización."],
+		speed: 80,
+		breakLines: false,
+		loopDelay: 3500,
+		deleteDelay: 3500,
+		autoStart: true,
+		loop: true
+	});
 	$.scrollify.destroy();
 } else {
 	// console.log('grande?');
