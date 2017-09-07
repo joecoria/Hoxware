@@ -117,8 +117,8 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 .nav-wrapper .menu #accordion {position: fixed; top: 3rem; right: 0;}
 .navlinks ul {list-style: none; margin-bottom: 0; padding: 0; background: rgba(142, 142, 150, 0.41);}
 .navlinks ul li {border-bottom: 1px solid rgba(15, 15, 33, 0.87); padding: 10px;}
-.navlinks a {color: #d6d6d6;}
-.navlinks a:hover {color: #fff; text-decoration: none !important}
+.navlinks a {color: #fff;}
+.navlinks a:hover {color: #d6d6d6; text-decoration: none !important}
 .navtoggle {position: fixed; top: 1rem; right: 1rem;}
 .navtoggle span {color: #EAE7E7; display: block;}
 span.icon-bar {width: 20px; height: 2px; border-radius: 1px; background: #EAE7E7; margin: 3px auto; padding: 0;}
