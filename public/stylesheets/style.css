@@ -69,7 +69,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 .item-1{
 	animation-name: anim-1;
@@ -93,7 +93,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 .item-2{
 	animation-name: anim-2;
@@ -117,7 +117,7 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
 	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 .item-3{
 	animation-name: anim-3;
@@ -128,14 +128,14 @@ h2 span.hilite {text-shadow: 0 0 5px; display: block; color: #fff; font-size: 22
   100% { right: 85vw; top: 170vh; opacity: 0;}
 }
 @keyframes anim-2 {
-	0% { right: -20vw; top: 110vh; opacity: 0;}
+	0% { right: -10vw; top: 110vh; opacity: 0;}
   50% { right: 40vw; top: 190vh; opacity: 1;}
-  100% { right: 80vw; top: 250vh; opacity: 0;}
+  100% { right: 85vw; top: 250vh; opacity: 0;}
 }
 @keyframes anim-3 {
-	0% { right: -20vw; top: 250vh; opacity: 0;}
+	0% { right: -10vw; top: 250vh; opacity: 0;}
   50% { right: 40vw; top: 340vh; opacity: 1;}
-  100% { right: 80vw; top: 400vh; opacity: 0;}
+  100% { right: 85vw; top: 400vh; opacity: 0;}
 }
 
 /* nav */
@@ -378,7 +378,7 @@ h3.serv {font-family: 'Bitter', serif; font-size: 38px; font-weight: 700; text-t
 #ha:not(:hover) > .red p,
 #an:not(:hover) > .red p {opacity: 0;-webkit-transition: opacity 0.5s ease-out; -o-transition: opacity 0.5s ease; -ms-transition: opacity 0.5s ease; transition: opacity 0.5s ease; }
 .red h3, .red p {opacity: 0; -webkit-transition: opacity 2s ease-out; -o-transition: opacity 2s ease; -ms-transition: opacity 2s ease; transition: opacity 2s ease;}
-.box .binary {filter: blur(1px); font-family: 'Bitter', serif; width: 100%; opacity: 0.2}
+.box .binary {font-family: 'Bitter', serif; width: 100%; opacity: 0.2}
 .box h3 {margin-top: 15%;}
 .binary p {margin-bottom: 0 !important; width: 100%; font-size: 17px; word-break: break-all; text-align: center;}
 .binary .grad {
