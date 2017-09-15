@@ -1,6 +1,17 @@
+var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
+var explorer = navigator.userAgent.indexOf('MSIE') > -1;
+var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
+var safari   = navigator.userAgent.indexOf("Safari") > -1;
+var camino   = navigator.userAgent.indexOf("Camino") > -1;
+var opera    = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+if (!chrome) {
+	// alert('Not chrome');
+	$('#browser').modal('show');
+}
+
 // Scrollify!
 if ($(window).width() < 769) {
-	// console.log('chico..?');
+	// Texto que se escribe en la sección "Daños"
 	$('.typed').typeIt({
 		strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",
 		"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.",
@@ -14,7 +25,6 @@ if ($(window).width() < 769) {
 	});
 	$.scrollify.destroy();
 } else {
-	// console.log('grande?');
 	$.scrollify({
 		section:".panel",
 		scrollSpeed:900,
@@ -25,6 +35,7 @@ if ($(window).width() < 769) {
 	    $(".vnav").find("a[href=\"#" + ref + "\"]").addClass("active");
 			$.scrollify.update();
 			if($.scrollify.current().attr('data-section-name') === 'danos'){
+				// Texto que se escribe en la sección "Daños"
 				$('.typed').typeIt({
 					strings: ["El daño operativo puede ocasionar incumplimiento en compromisos y servicios.",
 					"El daño económico se sufre al perder clientes y pagar multas de regulaciones comerciales.",

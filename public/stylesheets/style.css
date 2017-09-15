@@ -15,7 +15,7 @@ h3 {font-size: 16px;}
 p {font-size: 14px; color: #fff}
 .bitter {font-family: 'Bitter', serif !important;}
 .bitter.thin {font-weight: 400;}
-span {color: #D50D0E;}
+span {color: #D50D0E; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
 /* 38px, 32px, 30px, 18px, 16px, 14px -- sacadas el PDF */
 
 /* custom */
@@ -404,6 +404,16 @@ form, .mensaje {width: 60%; margin: 3rem auto;}
 ::-moz-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 :-ms-input-placeholder {direction: rtl; font-family: 'Bitter', serif;}
 .mensaje p, .contactinfo p {font-family: 'Bitter', serif; font-size: 30px; font-weight: 700; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E}
+
+/* modal Chrome */
+.modal-content.browser {background-color: transparent; margin: auto; padding: 0; height: 99vh;}
+.modal-body {display: flex; justify-content: center; flex-direction: column; text-align: center;}
+h5#mybrowser {color: #fff; text-transform: uppercase;}
+p.browser {color: #fff; font-size: 16px;}
+a.browser, a.browser:hover {text-decoration: none !important; font-size: 16px; color: #D50D0E; -moz-text-shadow: 0 0 5px #D50D0E; -webkit-text-shadow: 0 0 5px #D50D0E; text-shadow: 0 0 5px #D50D0E; color: #D50D0E; display: inline-block;}
+a.browser {cursor: pointer;}
+.modal-backdrop {background-color: #030314;}
+.modal-backdrop.show {opacity: .85;}
 
 /* medias */
 @media (max-width: 575px) {
